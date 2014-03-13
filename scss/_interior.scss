@@ -1,0 +1,43 @@
+@import "compass/reset";
+@import "_setting";
+@import "_header";
+
+#container{
+	.portfolio__item__interior{
+		width:100%;
+	}
+}
+.portfolio__item__interior--title{
+	text-align:center;
+	padding-top:10px;
+	text-transform: uppercase;
+}
+.gallery__nav--next{
+	color:$gray;
+	text-align:center;
+	line-height:$xxl*2;
+	width:$xxl;
+	height:$xxl*2;
+	background-color:$white;
+	position:fixed;
+	top:calc(50% - 22px);
+	right:1px;
+	&:hover{
+		color:$white;
+		background-color:$gray;
+	}
+}
+.gallery__nav--previous{
+	@extend .gallery__nav--next;
+	left:1px;
+}
+@media (min-width: 640px){
+	.portfolio__item__interior{
+		padding:10px;
+	}
+}
+@media (max-width: 640px){
+	.portfolio__item__interior{
+		padding:5px;
+	}	
+}

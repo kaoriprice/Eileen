@@ -1,0 +1,58 @@
+@import "compass/reset";
+@import "_setting";
+@import "_header";
+
+.resume{
+	margin:10px;
+}
+.resume__menu{
+	width:25%; display:inline-block;
+	border-right:5px solid #333;
+	position:fixed;  left:0;
+	padding-top:$xxl/2;
+}
+.resume__menu__item{
+	height:$xxl; width:100%;
+	font-size:$m; text-align:right;
+	padding-right:10px;
+	
+}
+.resume__content{
+	margin-left:calc(25% + 20px);
+	width:75%;
+	display:inline-block;
+	font-family:$sans-serif;
+}
+.resume__content__header{
+	display:inline-block;
+	font-family:$serif;
+}
+.resume__content__header--h1{
+	font-size:$xxl; line-height:$xxl*1.5;
+	font-weight:bold;
+}
+.resume__content__header--p{
+	font-size:$l; line-height:$xxl/1.5;
+	width:80%;
+	padding-bottom:$xxl/1.5;
+}
+.resume__content--year{
+	font-size:$xl; line-height:$xl*1.5;
+	padding-top:$xl;
+}
+.resume__content--entry{
+	width:100%;
+}
+.resume__content__entry--type{
+	width:20%;
+	display:inline-block; 
+	font-size:$m; line-height:$m*2;
+}
+.resume__content__entry--location{
+	@extend .resume__content__entry--type;
+	width:45%;
+}
+.resume__content__entry--state{
+	@extend .resume__content__entry--type;
+	width:30%;
+}
