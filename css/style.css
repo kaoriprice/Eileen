@@ -221,44 +221,82 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-sizing: border-box;
 }
 
-/* line 6, ../scss/_portfolio.scss */
+/* line 3, ../scss/_portfolio.scss */
+#container li {
+  opacity: 0;
+}
+
+/* line 7, ../scss/_portfolio.scss */
+#container li.shown {
+  opacity: 1;
+}
+
+/* line 11, ../scss/_portfolio.scss */
+#container li.animate {
+  -webkit-animation: fadeIn 0.65s ease forwards;
+  -moz-animation: fadeIn 0.65s ease forwards;
+  animation: fadeIn 0.65s ease forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  /* line 19, ../scss/_portfolio.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  /* line 23, ../scss/_portfolio.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  /* line 27, ../scss/_portfolio.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/* line 34, ../scss/_portfolio.scss */
 a {
   color: initial;
 }
 
-/* line 9, ../scss/_portfolio.scss */
+/* line 37, ../scss/_portfolio.scss */
 figcaption {
   position: relative;
 }
 
-/* line 12, ../scss/_portfolio.scss */
+/* line 40, ../scss/_portfolio.scss */
 .portfolio__item {
   float: left;
   color: #1a1a1a;
   line-height: 17px;
   background-clip: content-box;
 }
-/* line 18, ../scss/_portfolio.scss */
+/* line 46, ../scss/_portfolio.scss */
 .portfolio__item:hover {
   background-color: #f2f2f2;
 }
-/* line 20, ../scss/_portfolio.scss */
+/* line 48, ../scss/_portfolio.scss */
 .portfolio__item:hover figcaption {
   border-bottom: #cccccc 1px solid;
 }
-/* line 23, ../scss/_portfolio.scss */
+/* line 51, ../scss/_portfolio.scss */
 .portfolio__item:hover .portfolio__item--zoom {
   display: initial;
 }
 
-/* line 28, ../scss/_portfolio.scss */
+/* line 56, ../scss/_portfolio.scss */
 .portfolio__item--img {
   width: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* line 33, ../scss/_portfolio.scss */
+/* line 61, ../scss/_portfolio.scss */
 .portfolio__item--zoom {
   position: absolute;
   top: -30px;
@@ -266,7 +304,7 @@ figcaption {
   display: none;
 }
 
-/* line 40, ../scss/_portfolio.scss */
+/* line 68, ../scss/_portfolio.scss */
 .portfolio__item--title {
   padding: 0px 10px;
   padding-top: 10px;
@@ -274,18 +312,18 @@ figcaption {
   font-size: 17px;
 }
 
-/* line 46, ../scss/_portfolio.scss */
+/* line 74, ../scss/_portfolio.scss */
 .portfolio__item--data {
   padding: 0 10px;
   font-size: 17px;
   font-variant: small-caps;
 }
-/* line 50, ../scss/_portfolio.scss */
+/* line 78, ../scss/_portfolio.scss */
 .portfolio__item--data span {
   font-size: 13px;
 }
 
-/* line 55, ../scss/_portfolio.scss */
+/* line 83, ../scss/_portfolio.scss */
 .portfolio__item--price {
   text-align: right;
   padding-right: 10px;
@@ -296,65 +334,65 @@ figcaption {
 }
 
 @media (min-width: 1024px) {
-  /* line 65, ../scss/_portfolio.scss */
+  /* line 93, ../scss/_portfolio.scss */
   .portfolio {
     padding: 10px;
   }
 
-  /* line 69, ../scss/_portfolio.scss */
+  /* line 97, ../scss/_portfolio.scss */
   #container .portfolio__item {
     padding: 10px;
     width: calc(100%/4);
   }
 }
 @media (max-width: 1024px) {
-  /* line 76, ../scss/_portfolio.scss */
+  /* line 104, ../scss/_portfolio.scss */
   .portfolio {
     padding: 10px;
   }
 
-  /* line 80, ../scss/_portfolio.scss */
+  /* line 108, ../scss/_portfolio.scss */
   #container .portfolio__item {
     padding: 10px;
     width: calc(100%/3);
   }
 }
 @media (max-width: 768px) {
-  /* line 87, ../scss/_portfolio.scss */
+  /* line 115, ../scss/_portfolio.scss */
   .portfolio {
     padding: 10px;
   }
 
-  /* line 91, ../scss/_portfolio.scss */
+  /* line 119, ../scss/_portfolio.scss */
   #container .portfolio__item {
     padding: 10px;
     width: calc(100%/2);
   }
-  /* line 94, ../scss/_portfolio.scss */
+  /* line 122, ../scss/_portfolio.scss */
   #container .portfolio__item .portfolio__item--title {
     font-size: 13px;
     line-height: 13px;
   }
 }
 @media (max-width: 640px) {
-  /* line 102, ../scss/_portfolio.scss */
+  /* line 130, ../scss/_portfolio.scss */
   .portfolio {
     padding: 5px;
   }
 
-  /* line 106, ../scss/_portfolio.scss */
+  /* line 134, ../scss/_portfolio.scss */
   #container .portfolio__item {
     padding: 5px;
     width: calc(100%/1);
   }
 }
 @media (max-width: 320px) {
-  /* line 114, ../scss/_portfolio.scss */
+  /* line 142, ../scss/_portfolio.scss */
   .portfolio {
     padding: 5px;
   }
 
-  /* line 118, ../scss/_portfolio.scss */
+  /* line 146, ../scss/_portfolio.scss */
   #container .portfolio__item {
     padding: 5px;
     width: calc(100%/1);
@@ -927,12 +965,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   clear: both;
 }
 
-/* line 11, ../scss/style.scss */
-body {
-  color: #333;
-}
-
-/* line 14, ../scss/style.scss */
+/* line 13, ../scss/style.scss */
 a {
   text-decoration: none;
 }
