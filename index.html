@@ -23,34 +23,34 @@
 
 		<nav class="navigation">
 			<ul>
-				<li class="navigation__link selected">
+				<li class="navigation__item--selected">
 					<a href="index.html">
-						<img class="navigation__icon" src="icon/nav/portfolio.svg"/>
-						<h3 class="navigation__name">Portfolio</h3>
+						<img class="navigation__item__icon--selected" src="icon/nav/portfolio_selected.svg"/>
+						<h3 class="navigation__item__name--selected">Portfolio</h3>
 					</a>
 				</li>	
-				<li class="navigation__link">
+				<li class="navigation__item">
 					<a href="resume.html">
-						<img class="navigation__icon" src="icon/nav/resume.svg"/>
-						<h3 class="navigation__name">Resume</h3>
+						<img class="navigation__item__icon" src="icon/nav/resume.svg"/>
+						<h3 class="navigation__item__name">Resume</h3>
 					</a>
 				</li>
-				<li class="navigation__link">
+				<li class="navigation__item">
 					<a href="statement.html">
-						<img class="navigation__icon" src="icon/nav/statement.svg"/>
-						<h3 class="navigation__name">Statement</h3>
+						<img class="navigation__item__icon" src="icon/nav/statement.svg"/>
+						<h3 class="navigation__item__name">Statement</h3>
 					</a>
 				</li>
-				<li class="navigation__link">
+				<li class="navigation__item">
 					<a href="news.html">
-						<img class="navigation__icon" src="icon/nav/news.svg"/>
-						<h3 class="navigation__name">News</h3>
+						<img class="navigation__item__icon" src="icon/nav/news.svg"/>
+						<h3 class="navigation__item__name">News</h3>
 					</a>
 				</li>
-				<li class="navigation__link">
+				<li class="navigation__item">
 					<a href="contact.html">
-						<img class="navigation__icon" src="icon/nav/contact.svg"/>
-						<h3 class="navigation__name">Contact</h3>
+						<img class="navigation__item__icon" src="icon/nav/contact.svg"/>
+						<h3 class="navigation__item__name">Contact</h3>
 					</a>
 				</li>
 			</ul>
@@ -65,20 +65,19 @@
 	<script id="portfolioItemTemplate" type="text/x-handlebars-template">
         <li class="portfolio__item">
             <figure>
-	            <a name="{{id}}" href="interior.html">
-	                <img class="portfolio__item--img" src="{{portfolioItemImgUrl}}" alt="{{portfolioItemImgAlt}}" />
+	            <a name="{{id}}" href="interior.html?{{index}}">
+	                <img class="portfolio__item__image" src="{{imageUrl}}" alt="{{alt}}" />
 	                <figcaption>
-						<img class="portfolio__item--zoom" src="icon/zoom.png" />	
-						<h1 class="portfolio__item--title">{{title}}</h1>
-						<p class="portfolio__item--data">{{medium}}<span>{{dimension}}</span></p>
-						<p class="portfolio__item--price">{{price}}</p>
+						<img class="portfolio__item__zoom" src="icon/zoom.png" />	
+						<h1 class="portfolio__item__title">{{title}}</h1>
+						<p class="portfolio__item__data">{{medium}}<span>{{dimension}}</span></p>
+						<p class="portfolio__item__price">{{price}}</p>
 					</figcaption>
 		     	</a>
      	   </figure>
         </li>           
     </script>
 	<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
-	<script src="js/data.js"></script>
 	<script src="lib/masonry.pkgd.min.js"></script>
 	<script src="lib/handlebars-v1.3.0.js"></script>
 	<script src="js/modernizr-latest.js"></script>

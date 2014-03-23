@@ -10,6 +10,12 @@
 	border-right:5px solid #333;
 	position:fixed;  left:0;
 	padding-top:$xxl/2;
+	a{
+		color:$black;
+		&:hover{
+			color:$red;
+		}
+	}
 }
 .resume__menu__item{
 	height:$xxl; width:100%;
@@ -30,15 +36,18 @@
 .resume__content__header--h1{
 	font-size:$xxl; line-height:$xxl*1.5;
 	font-weight:bold;
+	color:$red;
 }
 .resume__content__header--p{
 	font-size:$l; line-height:$xxl/1.5;
 	width:80%;
 	padding-bottom:$xxl/1.5;
+	color:$gray;
 }
 .resume__content--year{
 	font-size:$xl; line-height:$xl*1.5;
 	padding-top:$xl;
+	color:$red-light;
 }
 .resume__content--entry{
 	width:100%;
@@ -46,7 +55,7 @@
 .resume__content__entry--type{
 	width:20%;
 	display:inline-block; 
-	font-size:$m; line-height:$m*2;
+	font-size:$s;line-height:$s*3;
 }
 .resume__content__entry--location{
 	@extend .resume__content__entry--type;

@@ -123,17 +123,17 @@ header {
   color: #1a1a1a;
 }
 /* line 39, ../scss/_header.scss */
-.navigation .navigation__link {
+.navigation .navigation__item {
   float: left;
   padding-left: 13px;
 }
 /* line 43, ../scss/_header.scss */
-.navigation .navigation__link:hover .navigation__icon {
+.navigation .navigation__item:hover .navigation__icon {
   opacity: 1;
   filter: alpha(opacity=1);
 }
 /* line 47, ../scss/_header.scss */
-.navigation .navigation__link:hover .navigation__name {
+.navigation .navigation__item:hover .navigation__item__name {
   color: #1a1a1a;
 }
 /* line 52, ../scss/_header.scss */
@@ -144,7 +144,7 @@ header {
   filter: alpha(opacity=0);
 }
 /* line 58, ../scss/_header.scss */
-.navigation .navigation__name {
+.navigation .navigation__item__name {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 13px;
   font-weight: bold;
@@ -152,7 +152,7 @@ header {
 }
 
 /* line 66, ../scss/_header.scss */
-.selected .navigation__name {
+.selected .navigation__item__name {
   color: #1a1a1a;
 }
 /* line 69, ../scss/_header.scss */
@@ -206,7 +206,7 @@ header {
     padding-top: 17px;
   }
   /* line 108, ../scss/_header.scss */
-  .navigation .navigation__link {
+  .navigation .navigation__item {
     float: right;
   }
   /* line 111, ../scss/_header.scss */
@@ -339,17 +339,17 @@ header {
   color: #1a1a1a;
 }
 /* line 39, ../scss/_header.scss */
-.navigation .navigation__link {
+.navigation .navigation__item {
   float: left;
   padding-left: 13px;
 }
 /* line 43, ../scss/_header.scss */
-.navigation .navigation__link:hover .navigation__icon {
+.navigation .navigation__item:hover .navigation__icon {
   opacity: 1;
   filter: alpha(opacity=1);
 }
 /* line 47, ../scss/_header.scss */
-.navigation .navigation__link:hover .navigation__name {
+.navigation .navigation__item:hover .navigation__item__name {
   color: #1a1a1a;
 }
 /* line 52, ../scss/_header.scss */
@@ -360,7 +360,7 @@ header {
   filter: alpha(opacity=0);
 }
 /* line 58, ../scss/_header.scss */
-.navigation .navigation__name {
+.navigation .navigation__item__name {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 13px;
   font-weight: bold;
@@ -368,7 +368,7 @@ header {
 }
 
 /* line 66, ../scss/_header.scss */
-.selected .navigation__name {
+.selected .navigation__item__name {
   color: #1a1a1a;
 }
 /* line 69, ../scss/_header.scss */
@@ -422,7 +422,7 @@ header {
     padding-top: 17px;
   }
   /* line 108, ../scss/_header.scss */
-  .navigation .navigation__link {
+  .navigation .navigation__item {
     float: right;
   }
   /* line 111, ../scss/_header.scss */

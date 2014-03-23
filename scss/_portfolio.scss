@@ -27,10 +27,6 @@
 	to { opacity: 1; }
 }
 
-
-.portfolio{
-	//background-color:$black;
-}
 a{
 	color:initial;
 }
@@ -39,54 +35,44 @@ figcaption{
 }
 .portfolio__item{
 	float:left;
+	background-clip:content-box;
 	color:$black;
 	line-height: $m;
-	//background-color:#f2f2f2;
-	background-clip:content-box;
 	&:hover{
 		background-color:#f2f2f2;
 		figcaption{
 			border-bottom:$light-gray 1px solid;
 		}
-		.portfolio__item--zoom{
+		.portfolio__item__zoom{
 			display:initial;
 		}
 	}
 }
-.portfolio__item--img{
+.portfolio__item__image{
 	width:100%;
 	padding:0;
 	margin:0;
 }
-.portfolio__item--zoom{
-	position:absolute;
-	top:-30px;
-	right:10px;
-	//left:calc(50% - 15px);
+.portfolio__item__zoom{
+	position:absolute; top:-30px; right:10px;
+	//left:calc(50% - 15px); //center
 	display:none;
 }
-.portfolio__item--title{
-	padding:0px 10px;
-	padding-top:10px;
-	text-transform: uppercase;
-	font-size:$m;
+.portfolio__item__title{
+	padding:0px 5px; 
+	font-size:$m; line-height:$m*2; text-transform: uppercase;
 }
-.portfolio__item--data{
-	padding:0 10px;
-	font-size:$m;
-	font-variant:small-caps;
+.portfolio__item__data{
+	padding:0 5px;
+	font-size:$m; line-height:$m;font-variant:small-caps;
 	span{
 		font-size:$s;
 	}
 
 }
-.portfolio__item--price{
-	text-align: right;
-	padding-right:10px;
-	font-size: $xs;
-	text-transform: uppercase;
-	font-style:italic;
-	padding-bottom:10px;
+.portfolio__item__price{
+	padding-right:5px;
+	font-size: $xs;line-height:$m; text-transform: uppercase; font-style:italic;text-align: right;
 }
 
 @media (min-width: 1024px){
@@ -119,9 +105,9 @@ figcaption{
 		.portfolio__item{
 			padding:10px;
 			width:calc(100%/2);
-			.portfolio__item--title{
+			.portfolio__item__title{
 				font-size:$s;
-				line-height: $s;
+				line-height:$s;
 			}
 		}
 	}
