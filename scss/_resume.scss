@@ -5,11 +5,10 @@
 .resume{
 	margin:10px;
 }
-.resume__menu{
+.resume__navigation{
 	width:25%; display:inline-block;
-	border-right:5px solid #333;
+	border-right:2px solid $gray;
 	position:fixed;  left:0;
-	padding-top:$xxl/2;
 	a{
 		color:$black;
 		&:hover{
@@ -17,51 +16,50 @@
 		}
 	}
 }
-.resume__menu__item{
-	height:$xxl; width:100%;
-	font-size:$m; text-align:right;
-	padding-right:10px;
-	
+.resume__navigation .selected{
+	a{
+		color:$red;
+	}
 }
-.resume__content{
+.resume__navigation__item{
+	font-size:$m; text-align:right; line-height:$xl;
+	font-family:$sans-serif;
+	width:100%;
+	padding-right:10px;
+}
+.resume__exhibitions{
 	margin-left:calc(25% + 20px);
-	width:75%;
 	display:inline-block;
 	font-family:$sans-serif;
 }
-.resume__content__header{
+.resume__exhibitions__header{
+	margin-left:calc(25% + 20px);
 	display:inline-block;
-	font-family:$serif;
 }
-.resume__content__header--h1{
-	font-size:$xxl; line-height:$xxl*1.5;
-	font-weight:bold;
-	color:$red;
+.resume__exhibitions__header__title{
+	color:$red; font-size:$xxl; line-height:$xl*2;font-weight:bold; font-family:$serif;
 }
-.resume__content__header--p{
-	font-size:$l; line-height:$xxl/1.5;
-	width:80%;
+.resume__exhibitions__header__description{
+	color:$black;font-size:$m; line-height:$xl;
 	padding-bottom:$xxl/1.5;
-	color:$gray;
 }
-.resume__content--year{
-	font-size:$xl; line-height:$xl*1.5;
-	padding-top:$xl;
-	color:$red-light;
+.resume__exhibitions__year{
+	color:$red-light; font-size:$xl; line-height:$xl*1.5;
 }
-.resume__content--entry{
+.resume__exhibitions__item{
 	width:100%;
+	color:$black;
 }
-.resume__content__entry--type{
+.resume__exhibitions__item__type{
 	width:20%;
 	display:inline-block; 
-	font-size:$s;line-height:$s*3;
+	font-size:$s;line-height:$xl;
 }
-.resume__content__entry--location{
-	@extend .resume__content__entry--type;
+.resume__exhibitions__item__details{
+	@extend .resume__exhibitions__item__type;
 	width:45%;
 }
-.resume__content__entry--state{
-	@extend .resume__content__entry--type;
+.resume__exhibitions__item__location{
+	@extend .resume__exhibitions__item__type;
 	width:30%;
 }

@@ -367,7 +367,7 @@ figcaption {
     line-height: 13px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 641px) {
   /* line 116, ../scss/_portfolio.scss */
   .portfolio {
     padding: 5px;
@@ -599,13 +599,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: none;
   }
 }
-/* line 6, ../scss/_interior.scss */
-#container--interior .portfolio__item--interior {
-  width: 100%;
+/* line 5, ../scss/_interior.scss */
+.back {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 4px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-image: url("../icon/back.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 11, ../scss/_interior.scss */
+.back:hover {
+  background-color: white;
+  background-image: url("../icon/back_hover.png");
 }
 
-/* line 10, ../scss/_interior.scss */
-.portfolio__item__title--interior {
+/* line 16, ../scss/_interior.scss */
+#interior__container {
+  padding: 20px;
+}
+
+/* line 19, ../scss/_interior.scss */
+.interior__item__title {
   text-align: center;
   padding-top: 10px;
   color: #1a1a1a;
@@ -614,76 +633,78 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-transform: uppercase;
 }
 
-/* line 15, ../scss/_interior.scss */
-.portfolio__item__image--interior {
-  width: 100%;
-  padding: 0;
-  margin: 0;
+/* line 24, ../scss/_interior.scss */
+#interior__item__image {
+  max-width: 100%;
+  width: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-/* line 20, ../scss/_interior.scss */
+/* line 29, ../scss/_interior.scss */
 #next, #previous {
-  color: gray;
   text-align: center;
-  line-height: 82px;
   width: 41px;
   height: 82px;
   background-color: rgba(255, 255, 255, 0.8);
   position: fixed;
   top: calc(50% - 40px);
   right: 20px;
+  background-image: url("../icon/next.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
-/* line 25, ../scss/_interior.scss */
+/* line 35, ../scss/_interior.scss */
 #next:hover, #previous:hover {
-  color: gray;
   background-color: white;
+  background-image: url("../icon/next_hover.png");
 }
 
-/* line 30, ../scss/_interior.scss */
+/* line 40, ../scss/_interior.scss */
 #previous {
+  background-image: url("../icon/previous.png");
+  background-position: center;
+  background-repeat: no-repeat;
   left: 20px;
 }
+/* line 44, ../scss/_interior.scss */
+#previous:hover {
+  background-image: url("../icon/previous_hover.png");
+}
 
-@media (min-width: 640px) {
-  /* line 39, ../scss/_interior.scss */
-  .portfolio__item--interior {
-    padding: 10px;
-  }
-
-  /* line 43, ../scss/_interior.scss */
-  #next, #previous {
+@media (max-width: 640px) {
+  /* line 49, ../scss/_interior.scss */
+  .back {
+    position: absolute;
+    top: 10px;
     right: 10px;
   }
 
-  /* line 46, ../scss/_interior.scss */
-  #previous {
-    left: 10px;
-  }
-}
-@media (max-width: 640px) {
-  /* line 51, ../scss/_interior.scss */
-  .portfolio__item--interior {
-    padding: 5px;
+  /* line 52, ../scss/_interior.scss */
+  #interior__container {
+    padding: 10px;
   }
 
-  /* line 54, ../scss/_interior.scss */
-  .portfolio__item__title--interior {
+  /* line 55, ../scss/_interior.scss */
+  .interior__item__title {
     font-size: 17px;
     line-height: 34px;
   }
 
-  /* line 57, ../scss/_interior.scss */
+  /* line 58, ../scss/_interior.scss */
   #next, #previous {
-    right: 5px;
     top: calc(50% - 30px);
-    line-height: 60px;
-    width: 30px;
     height: 60px;
+    width: 30px;
+    right: 10px;
   }
 
-  /* line 62, ../scss/_interior.scss */
+  /* line 63, ../scss/_interior.scss */
   #previous {
-    left: 5px;
+    top: calc(50% - 30px);
+    height: 60px;
+    width: 30px;
+    left: 10px;
   }
 }
 /* line 17, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
@@ -900,91 +921,95 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 8, ../scss/_resume.scss */
-.resume__menu {
+.resume__navigation {
   width: 25%;
   display: inline-block;
-  border-right: 5px solid #333;
+  border-right: 2px solid gray;
   position: fixed;
   left: 0;
-  padding-top: 20.5px;
 }
-/* line 13, ../scss/_resume.scss */
-.resume__menu a {
+/* line 12, ../scss/_resume.scss */
+.resume__navigation a {
   color: #1a1a1a;
 }
-/* line 15, ../scss/_resume.scss */
-.resume__menu a:hover {
+/* line 14, ../scss/_resume.scss */
+.resume__navigation a:hover {
   color: #f15a24;
 }
 
 /* line 20, ../scss/_resume.scss */
-.resume__menu__item {
-  height: 41px;
-  width: 100%;
+.resume__navigation .selected a {
+  color: #f15a24;
+}
+
+/* line 24, ../scss/_resume.scss */
+.resume__navigation__item {
   font-size: 17px;
   text-align: right;
+  line-height: 30px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  width: 100%;
   padding-right: 10px;
 }
 
-/* line 26, ../scss/_resume.scss */
-.resume__content {
+/* line 30, ../scss/_resume.scss */
+.resume__exhibitions {
   margin-left: calc(25% + 20px);
-  width: 75%;
   display: inline-block;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-/* line 32, ../scss/_resume.scss */
-.resume__content__header {
+/* line 35, ../scss/_resume.scss */
+.resume__exhibitions__header {
+  margin-left: calc(25% + 20px);
   display: inline-block;
+}
+
+/* line 39, ../scss/_resume.scss */
+.resume__exhibitions__header__title {
+  color: #f15a24;
+  font-size: 41px;
+  line-height: 60px;
+  font-weight: bold;
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
-/* line 36, ../scss/_resume.scss */
-.resume__content__header--h1 {
-  font-size: 41px;
-  line-height: 61.5px;
-  font-weight: bold;
-  color: #f15a24;
-}
-
-/* line 41, ../scss/_resume.scss */
-.resume__content__header--p {
-  font-size: 23px;
-  line-height: 27.33333px;
-  width: 80%;
+/* line 42, ../scss/_resume.scss */
+.resume__exhibitions__header__description {
+  color: #1a1a1a;
+  font-size: 17px;
+  line-height: 30px;
   padding-bottom: 27.33333px;
-  color: gray;
 }
 
-/* line 47, ../scss/_resume.scss */
-.resume__content--year {
+/* line 46, ../scss/_resume.scss */
+.resume__exhibitions__year {
+  color: #f79c7c;
   font-size: 30px;
   line-height: 45px;
-  padding-top: 30px;
-  color: #f79c7c;
 }
 
-/* line 52, ../scss/_resume.scss */
-.resume__content--entry {
+/* line 49, ../scss/_resume.scss */
+.resume__exhibitions__item {
   width: 100%;
+  color: #1a1a1a;
 }
 
-/* line 55, ../scss/_resume.scss */
-.resume__content__entry--type, .resume__content__entry--location, .resume__content__entry--state {
+/* line 53, ../scss/_resume.scss */
+.resume__exhibitions__item__type, .resume__exhibitions__item__details, .resume__exhibitions__item__location {
   width: 20%;
   display: inline-block;
   font-size: 13px;
-  line-height: 39px;
+  line-height: 30px;
 }
 
-/* line 60, ../scss/_resume.scss */
-.resume__content__entry--location {
+/* line 58, ../scss/_resume.scss */
+.resume__exhibitions__item__details {
   width: 45%;
 }
 
-/* line 64, ../scss/_resume.scss */
-.resume__content__entry--state {
+/* line 62, ../scss/_resume.scss */
+.resume__exhibitions__item__location {
   width: 30%;
 }
 

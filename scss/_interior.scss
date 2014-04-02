@@ -2,64 +2,67 @@
 @import "_setting";
 @import "_header";
 
-#container--interior{
-	.portfolio__item--interior{
-		width:100%;
+.back{
+	position:absolute; top:20px; right:20px;
+	padding:4px;
+	width:40px; height:40px;
+	background-color:rgba(255, 255, 255, 0.8);
+	background-image:url('../icon/back.png'); background-position:center; background-repeat:no-repeat;
+	&:hover{
+		background-color:rgba(255, 255, 255, 1);
+		background-image:url('../icon/back_hover.png');
 	}
 }
-.portfolio__item__title--interior{
+#interior__container{
+	padding:20px;
+}
+.interior__item__title{
 	text-align:center;
 	padding-top:10px;
 	color:$black; font-size:$l; line-height:$l*2; text-transform: uppercase;
 }
-.portfolio__item__image--interior{
-	width:100%;
-	padding:0;
-	margin:0;
+#interior__item__image{
+	max-width: 100%; width:auto;
+	display:block;
+	margin:0 auto;
 }
 #next{
-	color:$gray; text-align:center; line-height:$xxl*2;
+	text-align:center; 
 	width:$xxl; height:$xxl*2;
 	background-color:rgba(255, 255, 255, 0.8);
 	position:fixed; top:calc(50% - 40px); right:20px;
+	background-image:url('../icon/next.png'); background-position:center; background-repeat:no-repeat;
 	&:hover{
-		color:$gray;
 		background-color:rgba(255, 255, 255, 1);
+		background-image:url('../icon/next_hover.png');
 	}
 }
 #previous{
 	@extend #next;
+	background-image:url('../icon/previous.png'); background-position:center; background-repeat:no-repeat;
 	left:20px;
-}
-
-
-
-
-@media (min-width: 640px){
-	.portfolio__item--interior{
-		padding:10px;
-	}
-	
-	#next{
-		right:10px;
-	}
-	#previous{
-		left:10px;
+	&:hover{
+		background-image:url('../icon/previous_hover.png');
 	}
 }
 @media (max-width: 640px){
-	.portfolio__item--interior{
-		padding:5px;
+	.back{
+	position:absolute; top:10px; right:10px;
 	}
-	.portfolio__item__title--interior{
+	#interior__container{
+		padding:10px;
+	}
+	.interior__item__title{
 	font-size:$m; line-height:$m*2;
 	}
 	#next{
-		right:5px; top:calc(50% - 30px);
-		line-height:$xl*2;
-		width:$xl; height:$xl*2;
+		top:calc(50% - 30px);
+		height:$xl*2; width:$xl; 
+		right:10px;
 	}
 	#previous{
-		left:5px;
+		top:calc(50% - 30px);
+		height:$xl*2; width:$xl; 
+		left:10px;
 	}
 }

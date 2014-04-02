@@ -1,0 +1,469 @@
+{
+	"exhibitions":[
+		{
+			"year":"2014",
+			"type":"Four-Person Exhibitions",
+			"details":"Linn-Benton Community Community College",
+			"location": "Albany, Oregon"
+		},
+		{
+			"year":"2012",
+			"type":"Juried Group Exhibit",
+			"details":"\"The Art of Plankton\", Corvallis Arts Center",
+			"location": "Corvallis, Oregon"
+		},
+		{
+			"year":"2012",
+			"type":"Juried Group Exhibit",
+			"details":"\"Radius 25\", Salem Art Assoc.",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"2012",
+			"type":"Sitka Invitational",
+			"details":"Sitka Invitational",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2012",
+			"type":"Group Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2011",
+			"type":"Solo Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2011",
+			"type":"Juried Group Exhibit",
+			"details":"Pacific NW Art Annual, Univ of Oregon",
+			"location": "Eugene, Oregon"
+		},
+		{
+			"year":"2011",
+			"type":"Group Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2011",
+			"type":"Invitational Group Exhibit",
+			"details":"MLZeek Gallery",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"2010",
+			"type":"Juried",
+			"details":"\"Radius 25\", Salem Art Association",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"2010",
+			"type":"Juried",
+			"details":"\"Around Oregon\", ArtCentric",
+			"location": "Corvallis, Oregon"
+		},
+		{
+			"year":"2010",
+			"type":"Group Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2010",
+			"type":"Small Works Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2009",
+			"type":"Solo Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2009",
+			"type":"Group Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2009",
+			"type":"Invitational",
+			"details":"\"Mayor’s Invitational\", Salem Conference Center",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"2009",
+			"type":"Juried",
+			"details":"\"Around Oregon\", ArtCentric",
+			"location": "Corvallis, Oregon"
+		},
+		{
+			"year":"2009",
+			"type":"Invitational Group Exhibit",
+			"details":"MLZeek Gallery",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"2008",
+			"type":"Group Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2008",
+			"type":"Juried",
+			"details":"\"Around Oregon\", ArtCentric",
+			"location": "Corvallis, Oregon"
+		},
+		{
+			"year":"2008",
+			"type":"Invitational Group Exhibit",
+			"details":"MLZeek Gallery",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"2007",
+			"type":"Solo Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2007",
+			"type":"Solo Exhibit",
+			"details":"George Fox University,",
+			"location": "Newberg, Oregon"
+		},
+		{
+			"year":"2007",
+			"type":"Juried Group Exhibit",
+			"details":"\"Radius 25\", Salem Art Assoc.",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"2007",
+			"type":"Juried",
+			"details":"\"Around Oregon\", ArtCentric",
+			"location": "Corvallis, Oregon"
+		},
+		{
+			"year":"2007",
+			"type":"Invitational",
+			"details":"\"Mayor’s Invitational\", Salem Conference Center",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"2006",
+			"type":"Invitational",
+			"details":"Western Oregon University Faculty/Alumni Exhibit",
+			"location": "Monmouth, Oregon"
+		},
+		{
+			"year":"2006",
+			"type":"Juried",
+			"details":"Oregon Art Annual, Professional, Best of Show and First Place",
+			"location": ""
+		},
+		{
+			"year":"2006",
+			"type":"Juried",
+			"details":"\"Around Oregon\", ArtCentric",
+			"location": "Corvallis, Oregon"
+		},
+		{
+			"year":"2006",
+			"type":"Group Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2006",
+			"type":"Invitational",
+			"details":"Columbia Slough Project",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2005",
+			"type":"Group Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2005",
+			"type":"Oregon Art Annual",
+			"details":"Professional Division, Award",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"2005",
+			"type":"Sitka Invitational",
+			"details":"Sitka Invitational",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2004",
+			"type":"Solo Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2004",
+			"type":"Sitka Invitational",
+			"details":"Sitka Invitational",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2003",
+			"type":"International Juried",
+			"details":"Pittsburgh Watercolor Society 57th Annual",
+			"location": "Pittburgh, Pennsylvania"
+		},
+		{
+			"year":"2003",
+			"type":"National Juried",
+			"details":"California Watercolor Assoc. 35th Annual",
+			"location": "San Francisco, California"
+		},
+		{
+			"year":"2003",
+			"type":"Pacific NW Juried",
+			"details":"Watercolor Society of Oregon 38th Annual Aqueous Media",
+			"location": ""
+		},
+		{
+			"year":"2003",
+			"type":"Juried",
+			"details":"All-Oregon Art Annual, Professional Division",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"2003",
+			"type":"Invitational",
+			"details":"Salem Masters Series: Landscapes, Salem Art Assoc.",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"2003",
+			"type":"Sitka Invitational",
+			"details":"Sitka Invitational",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2002",
+			"type":"Solo Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2002",
+			"type":"Juried",
+			"details":"All-Oregon Art Annual, Professional Division, Best of Show",
+			"location": ""
+		},
+		{
+			"year":"2002",
+			"type":"Juried",
+			"details":"Rogue Gallery and Art Center",
+			"location": "Medford, Oregon"
+		},
+		{
+			"year":"2002",
+			"type":"Faculty Exhibit",
+			"details":"Chemeketa Community College",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"2002",
+			"type":"Group Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2002",
+			"type":"Group Exhibit",
+			"details":"Silver Creek Gallery",
+			"location": "Silverton, Oregon"
+		},
+		{
+			"year":"2001",
+			"type":"Juried",
+			"details":"All-Oregon Art Annual, Professional Division, Award",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"2001",
+			"type":"Faculty Exhibit",
+			"details":"Chemeketa Community College",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"2001",
+			"type":"Group Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2001",
+			"type":"Group Exhibit",
+			"details":"River Gallery",
+			"location": "Independence, Oregon"
+		},
+		{
+			"year":"2000",
+			"type":"Solo Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"2000",
+			"type":"Two-Person Exhibit",
+			"details":"Featured Artist Gallery, Salem Art Assoc.",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"2000",
+			"type":"Faculty Exhibit",
+			"details":"Chemeketa Community College",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"2000",
+			"type":"Juried",
+			"details":"Western Oregon University Alumni Exhibit",
+			"location": "Monmouth, Oregon"
+		},
+		{
+			"year":"2000",
+			"type":"Group Exhibit",
+			"details":"Colored Pencil Society of America, State Capitol, Award",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"1999",
+			"type":"Group Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"1999",
+			"type":"Group Exhibit",
+			"details":"Colored Pencil Society of America, State Capitol, Award",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"1998",
+			"type":"Group Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"1998",
+			"type":"Group Exhibit",
+			"details":"Colored Pencil Society of America, State Capitol, Award",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"1997",
+			"type":"Two-Person Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+
+		{
+			"year":"1997",
+			"type":"Invitational Juried",
+			"details":"Arts in Oregon Council, State Capitol",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"1997",
+			"type":"Group Exhibit",
+			"details":"Omni Gallery",
+			"location": "Portland, Oregon"
+		},
+
+		{
+			"year":"1997",
+			"type":"Group Exhibit",
+			"details":"Artspace Gallery",
+			"location": "Bay City, Oregon"
+		},
+		{
+			"year":"1997",
+			"type":"Group Exhibit",
+			"details":"Colored Pencil Society of America, State Capitol, Award",
+			"location": "Salem, Oregon"
+		},
+
+		{
+			"year":"1996",
+			"type":"Group Exhibit",
+			"details":"Waterstone Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"1995",
+			"type":"Invitational Juried",
+			"details":"Arts in Oregon Council, State Capitol",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"1995",
+			"type":"Juried",
+			"details":"All-Oregon Art Annual, Professional Division",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"1995",
+			"type":"Invitational",
+			"details":"Western Oregon State College Alumni Exhibit",
+			"location": "Monmouth, Oregon"
+		},
+		{
+			"year":"1995",
+			"type":"Invitational",
+			"details":"\"Art on the River\" Art Festival",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"1994",
+			"type":" Two-Person Exhibit",
+			"details":"Artisans’ Co-operative Gallery",
+			"location": "Portland, Oregon"
+		},
+		{
+			"year":"1994",
+			"type":"International Juried",
+			"details":"Colored Pencil Society of America",
+			"location": "Lake Oswego, Oregon"
+		},
+		{
+			"year":"1994",
+			"type":"Invitational Juried",
+			"details":"Arts in Oregon Council, State Capitol",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"1993",
+			"type":"Solo Exhibit",
+			"details":"Chemeketa Community College",
+			"location": "Salem, Oregon"
+		},
+		{
+			"year":"1993",
+			"type":"National Juried",
+			"details":"Masters of Colored Pencil",
+			"location": "Santa Teresa, New Mexico"
+		},
+		{
+			"year":"1993",
+			"type":"Juried",
+			"details":"All-Oregon Art Annual, Professional Division, Award",
+			"location": "Salem, Oregon"
+		}
+	]
+}

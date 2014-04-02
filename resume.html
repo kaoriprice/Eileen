@@ -29,10 +29,10 @@
 						<h3 class="navigation__item__name">Portfolio</h3>
 					</a>
 				</li>	
-				<li class="navigation__item selected">
+				<li class="navigation__item--selected">
 					<a href="resume.html">
-						<img class="navigation__item__icon" src="icon/nav/resume.svg"/>
-						<h3 class="navigation__item__name">Resume</h3>
+						<img class="navigation__item__icon--selected" src="icon/nav/resume_selected.svg"/>
+						<h3 class="navigation__item__name--selected">Resume</h3>
 					</a>
 				</li>
 				<li class="navigation__item">
@@ -58,118 +58,75 @@
 		<div class="clear"></div>
 	</header>
 
-	<div class="resume">
-  		<aside class="resume__menu">
+	<main class="resume">
+  		<aside class="resume__navigation">
   			<ul>
-  				<li class="resume__menu__item"><a href="">Exhibitions</a></li>
-  				<li class="resume__menu__item"><a href="">Selected Collections</a></li>
-  				<li class="resume__menu__item"><a href="">Gallery Representation</a></li>
-  				<li class="resume__menu__item"><a href="">Publications and Articles</a></li>
-  				<li class="resume__menu__item"><a href="">Teaching</a></li>
+  				<li class="resume__navigation__item"><a href="#exhibitions">Exhibitions</a></li>
+  				<li class="resume__navigation__item"><a href="#selectedcollections">Selected Collections</a></li>
+  				<li class="resume__navigation__item"><a href="">Gallery Representation</a></li>
+  				<li class="resume__navigation__item"><a href="">Publications and Articles</a></li>
+  				<li class="resume__navigation__item"><a href="">Teaching</a></li>
   			</ul>
   		</aside>
+
+		<a name="exhibitions"></a>
+  		<header class="resume__exhibitions__header">
+			<h1 class="resume__exhibitions__header__title">Exhibitions</h1>
+			<p class="resume__exhibitions__header__description">Maecenas eget ipsum volutpat, varius nunc quis, facilisis odio. Aliquam faucibus, odio eget vestibulum volutpat, diam velit venenatis quam, et cursus magna nibh fringilla arcu. Phasellus bibendum quis metus in viverra. Aliquam pellentesque leo eu elit dapibus consectetur.</p>
+		</header>
 		
-		<div class="resume__content">
-			<header class="resume__content__header">
-				<h1 class="resume__content__header--h1">Exhibitions</h1>
-				<p class="resume__content__header--p">
-					Maecenas eget ipsum volutpat, varius nunc quis, facilisis odio. Aliquam faucibus, odio eget vestibulum volutpat, diam velit venenatis quam, et cursus magna nibh fringilla arcu. Phasellus bibendum quis metus in viverra. Aliquam pellentesque leo eu elit dapibus consectetur.
-				</p>
-			</header>
+		<section class="resume__exhibitions" id="exhibition__container">
 			
-			<h1 class="resume__content--year">2014</h1>
-			<section class="resume__content__entry">
-				<p class="resume__content__entry--type">Four-Person Exhibit</p>
-				<p class="resume__content__entry--location">Linn-Benton Community Community College</p>
-				<p class="resume__content__entry--state">Albany, Oregon</p>
-			</section>
+		</section>
 
-			<h1 class="resume__content--year">2012</h1>
-			<section class="resume__content__entry">
-				<p class="resume__content__entry--type">Juried Group Exhibit</p>
-				<p class="resume__content__entry--location">"The Art of Plankton"</p>
-				<p class="resume__content__entry--state">Corvallis, Oregon</p>
+		<a name="selectedcollections"></a>
+	</main>
+
+	<script id="exhibitionTemplate" type="text/x-handlebars-template">
+		<h2 class="resume__exhibitions__year">{{year}}</h2>
+        {{#each exhibitions}}
+			<section class="resume__exhibitions__item">
+				<p class="resume__exhibitions__item__type">{{type}}</p>
+				<p class="resume__exhibitions__item__details">{{details}}</p>
+				<p class="resume__exhibitions__item__location">{{location}}</p>
 			</section>
-			<section class="resume__content__entry">
-				<p class="resume__content__entry--type">Juried Group Exhibit</p>
-				<p class="resume__content__entry--location">"Radius 25", Salem Art Assoc.</p>
-				<p class="resume__content__entry--state">Salem, Oregon</p>
-			</section>
-			<section class="resume__content__entry">
-				<p class="resume__content__entry--type">Juried Group Exhibit</p>
-				<p class="resume__content__entry--location">"The Art of Plankton"</p>
-				<p class="resume__content__entry--state">Corvallis, Oregon</p>
-			</section>
-			<section class="resume__content__entry">
-				<p class="resume__content__entry--type">Juried Group Exhibit</p>
-				<p class="resume__content__entry--location">"Radius 25", Salem Art Assoc.</p>
-				<p class="resume__content__entry--state">Salem, Oregon</p>
-			</section>
-			<section class="resume__content__entry">
-				<p class="resume__content__entry--type">Juried Group Exhibit</p>
-				<p class="resume__content__entry--location">"The Art of Plankton"</p>
-				<p class="resume__content__entry--state">Corvallis, Oregon</p>
-			</section>
-			<section class="resume__content__entry">
-				<p class="resume__content__entry--type">Juried Group Exhibit</p>
-				<p class="resume__content__entry--location">"Radius 25", Salem Art Assoc.</p>
-				<p class="resume__content__entry--state">Salem, Oregon</p>
-			</section>
+        {{/each}}
+    </script>
+
+	<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="lib/handlebars-v1.3.0.js"></script>
+	<script src="js/modernizr-latest.js"></script>
+	<script src="lib/lodash.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		var exhibitionTemplateHtml = $("#exhibitionTemplate").html();
+		var exhibitionTemplateFunction = Handlebars.compile(exhibitionTemplateHtml);
 
 
-			<h1 class="resume__content--year">2012</h1>
-			<section class="resume__content__entry">
-				<p class="resume__content__entry--type">Juried Group Exhibit</p>
-				<p class="resume__content__entry--location">"The Art of Plankton"</p>
-				<p class="resume__content__entry--state">Corvallis, Oregon</p>
-			</section>
-			<section class="resume__content__entry">
-				<p class="resume__content__entry--type">Juried Group Exhibit</p>
-				<p class="resume__content__entry--location">"Radius 25", Salem Art Assoc.</p>
-				<p class="resume__content__entry--state">Salem, Oregon</p>
-			</section>
-			
-			<h1 class="resume__content--year">2014</h1>
-			<section class="resume__content__entry">
-				<p class="resume__content__entry--type">Four-Person Exhibit</p>
-				<p class="resume__content__entry--location">Linn-Benton Community Community College</p>
-				<p class="resume__content__entry--state">Albany, Oregon</p>
-			</section>
+		$.get("data/resume.json", function (resumeData) {
 
-			<h1 class="resume__content--year">2012</h1>
-			<section class="resume__content__entry">
-				<p class="resume__content__entry--type">Juried Group Exhibit</p>
-				<p class="resume__content__entry--location">"The Art of Plankton"</p>
-				<p class="resume__content__entry--state">Corvallis, Oregon</p>
-			</section>
-			<section class="resume__content__entry">
-				<p class="resume__content__entry--type">Juried Group Exhibit</p>
-				<p class="resume__content__entry--location">"Radius 25", Salem Art Assoc.</p>
-				<p class="resume__content__entry--state">Salem, Oregon</p>
-			</section>
-			<h1 class="resume__content--year">2014</h1>
-			<section class="resume__content__entry">
-				<p class="resume__content__entry--type">Four-Person Exhibit</p>
-				<p class="resume__content__entry--location">Linn-Benton Community Community College</p>
-				<p class="resume__content__entry--state">Albany, Oregon</p>
-			</section>
+			var exhibitions = resumeData.exhibitions;
 
-			<h1 class="resume__content--year">2012</h1>
-			<section class="resume__content__entry">
-				<p class="resume__content__entry--type">Juried Group Exhibit</p>
-				<p class="resume__content__entry--location">"The Art of Plankton"</p>
-				<p class="resume__content__entry--state">Corvallis, Oregon</p>
-			</section>
-			<section class="resume__content__entry">
-				<p class="resume__content__entry--type">Juried Group Exhibit</p>
-				<p class="resume__content__entry--location">"Radius 25", Salem Art Assoc.</p>
-				<p class="resume__content__entry--state">Salem, Oregon</p>
-			</section>
+			var groupedByYear = _.groupBy(exhibitions, function(exhibition) { return exhibition.year; });
 
-		</div>
+			//var sortedByYear = _.sortBy(groupedByYear, function (group) { return Number(group); });
 
-	</div>
-	<script src="lib/masonry.pkgd.min.js"></script>
+
+			_.forEachRight(groupedByYear, function (exhibitions, year) {
+				var outputHtml = exhibitionTemplateFunction({exhibitions: exhibitions, year: year});
+				$("#exhibition__container").append(outputHtml);
+			});
+		});
+
+		$(".resume__navigation__item").click(function (event) {
+			$(".resume__navigation__item").removeClass("selected");
+			$(event.currentTarget).addClass("selected");
+		});
+	});
+
+
+		
+	</script>
 </body>
 
 </html>
