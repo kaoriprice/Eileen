@@ -1,0 +1,110 @@
+
+[
+	{
+		"name":"Grandhaven Elementary",
+		"location":"McMinnville, Oregon",
+		"type":"All-School Residency",
+		"year":"2013, 2012"
+	},
+	{
+		"name":"Wascher Elementary",
+		"location":"Lafayette, Oregon",
+		"type":"All-School Residency",
+		"year":"2011"
+	},
+	{
+		"name":"Sue Buel Elementary",
+		"location":"McMinnville, Oregon",
+		"type":"All-School Residency",
+		"year":"2010"
+	},
+	{
+		"name":"Newby Elementary",
+		"location":"McMinnville, Oregon",
+		"type":"All-School Residency",
+		"year":"2009"
+	},
+	{
+		"name":"Salem Art Assoc. H.S.",
+		"location":"Salem, Oregon",
+		"type":"Intern Program",
+		"year":"2008, 2009, 2012-2014"
+	},
+	{
+		"name":"Private lessons",
+		"location":"Salem, Oregon",
+		"type":"Private lessons",
+		"year":"2008-2010"
+	},
+	{
+		"name":"Queen of Peace Elem",
+		"location":"Salem, Oregon",
+		"type":"Fall Residency",
+		"year":"2007"
+	},
+	{
+		"name":"Middleton Elem",
+		"location":"Sherwood, Oregon",
+		"type":"Spring Residency",
+		"year":"2007"
+	},
+	{
+		"name":"Middleton Elem",
+		"location":"Sherwood, Oregon",
+		"type":"Public art project: Providence Hospital",
+		"year":"2006"
+	},
+	{
+		"name":"Chemeketa Community College",
+		"location":"Salem, Oregon",
+		"type":"adjunct faculty",
+		"year":"1999-2002"
+	},
+	{
+		"name":"Brush College Elementary",
+		"location":"Salem, Oregon",
+		"type":"Outdoor Mural Projec",
+		"year":"2001"
+	},
+	{
+		"name":"Salem Art Association",
+		"location":"Salem, Oregon",
+		"type":"Classes, workshops",
+		"year":"1993-1999"
+	},
+	{
+		"name":"Very Special Arts Oregon",
+		"location":"N/A",
+		"type":"N/A",
+		"year":"1999"
+	},
+	{
+		"name":"Keizer Art Association",
+		"location":", Oregon",
+		"type":"Classes, workshops",
+		"year":"2005-2010, 1996-1998"
+	},
+	{
+		"name":"The Art Department, Inc.",
+		"location":"Salem, Oregon",
+		"type":"Workshops",
+		"year":"1995-2000"
+	},{
+		"name":"Elderhostel",
+		"location":"Camp Cascade, Oregon",
+		"type":"Workshops",
+		"year":"1997-2000"
+	},
+	{
+		"name":"Brush College Elementary",
+		"location":"Salem, Oregon",
+		"type":"Volunteer teacher/Consultant",
+		"year":"1991-2002"
+	},{
+		"name":"The Heritage School",
+		"location":", Oregon",
+		"type":"Volunteer teacher",
+		"year":"1998-2003"
+	}
+]
+

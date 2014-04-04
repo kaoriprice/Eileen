@@ -1,65 +1,120 @@
-@import "compass/reset";
-@import "_setting";
-@import "_header";
+
+body{
+	background-color:$white;
+}
 
 .resume{
-	margin:10px;
+	padding:20px;
+	width:100%;
+	display:inline-block;
 }
+
 .resume__navigation{
 	width:25%; display:inline-block;
-	border-right:2px solid $gray;
-	position:fixed;  left:0;
+	border-right:1px solid $gray;
+	margin-top:$xl; 
+	position:fixed; left:0;
 	a{
-		color:$black;
+		color:$gray;
 		&:hover{
-			color:$red;
+			color:$black;
 		}
 	}
 }
-.resume__navigation .selected{
+
+.resume__navigation__item{
+	font-size:$m; text-align:right; letter-spacing: 0.5px; font-family:$sans-serif; font-weight:bold;
+	width:100%;
+	padding:$xs/2;
+}
+.resume__navigation__item--selected{
 	a{
 		color:$red;
 	}
 }
-.resume__navigation__item{
-	font-size:$m; text-align:right; line-height:$xl;
-	font-family:$sans-serif;
-	width:100%;
-	padding-right:10px;
-}
-.resume__exhibitions{
-	margin-left:calc(25% + 20px);
+
+.resume__container{
 	display:inline-block;
 	font-family:$sans-serif;
+	width:75%; float:right;
+	padding-left:$xs;
 }
-.resume__exhibitions__header{
-	margin-left:calc(25% + 20px);
+.resume__category{
 	display:inline-block;
 }
-.resume__exhibitions__header__title{
-	color:$red; font-size:$xxl; line-height:$xl*2;font-weight:bold; font-family:$serif;
+
+.resume__category__header{
+	color:$red; font-size:$xl*2; font-weight:bold; font-family:$serif;
 }
-.resume__exhibitions__header__description{
-	color:$black;font-size:$m; line-height:$xl;
-	padding-bottom:$xxl/1.5;
+
+.resume__category__description{
+	color:$gray; font-size:$m; line-height:$xl;
+	padding:$xs; padding-top:0; padding-bottom:$xl;
 }
-.resume__exhibitions__year{
-	color:$red-light; font-size:$xl; line-height:$xl*1.5;
+.sub-title{
+	color:$gray; font-size:$l; line-height:$xl; font-style:italic;
+	border-bottom:1px solid $light-gray; 
 }
-.resume__exhibitions__item{
-	width:100%;
-	color:$black;
+.sub-title--private_collection{
+	padding-top:$m;
 }
-.resume__exhibitions__item__type{
-	width:20%;
+.resume__item{
 	display:inline-block; 
-	font-size:$s;line-height:$xl;
+	width:100%;
+	font-size:$s; line-height:$s*1.5; color:$black; letter-spacing:0.5px;
+	padding: $s/2 0;
 }
-.resume__exhibitions__item__details{
-	@extend .resume__exhibitions__item__type;
-	width:45%;
+
+.resume__item--list{
+	font-size:$m; // font-weight:bold;
+	list-style: square inside none;
 }
-.resume__exhibitions__item__location{
-	@extend .resume__exhibitions__item__type;
-	width:30%;
+.resume__item--link{
+	//text-decoration:underline;
+	&:hover{
+		color:$red;
+	}
+}
+.resume__item--collections--private{
+	font-style:italic;
+}
+.resume__item--exhibition--type{
+	display:inline-block;vertical-align:top;float:left;
+	width:25%; 
+}
+.resume__item--exhibition--details{
+	display:inline-block;vertical-align:top;float:left;
+	width:50%;
+}
+.resume__item--exhibition--location{
+	display:inline-block;vertical-align:top;float:left;
+	width:25%;
+	text-align:right;
+}
+.resume__item--publications--year, .resume__item--teaching--year{
+	color:$gray; font-size:$m; line-height:$m*2; font-style:italic;
+}
+.resume__item--publications--content, .resume__item--teaching--content{
+	font-size:$m; 
+}
+
+
+
+@media (max-width: 640px){
+	.resume__navigation__item{
+	font-size:$s; 
+	}
+}
+
+@media (max-width: 480px){
+	.resume__navigation__item{
+	display:none;
+	}
+	.resume__container{
+	margin-left:0; padding-left:0px;
+	width:100%;
+	}
+	.resume__category{
+	margin-left:0; padding-left:0px;
+	}
 }

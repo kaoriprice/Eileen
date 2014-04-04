@@ -1,59 +1,59 @@
-@import "compass/reset";
-@import "_setting";
-@import "_header";
-
-.back{
-	position:absolute; top:20px; right:20px;
-	padding:4px;
-	width:40px; height:40px;
-	background-color:rgba(255, 255, 255, 0.8);
-	background-image:url('../icon/back.png'); background-position:center; background-repeat:no-repeat;
-	&:hover{
-		background-color:rgba(255, 255, 255, 1);
-		background-image:url('../icon/back_hover.png');
+.interior{
+	background-color:$black;
+	&::before{
+		content:"";
+		width:100%; height:100%;
+		background-color:$black;
+		position:absolute; top:0; left:0;
+		z-index: -3;
 	}
 }
-#interior__container{
-	padding:20px;
-}
+
 .interior__item__title{
-	text-align:center;
-	padding-top:10px;
-	color:$black; font-size:$l; line-height:$l*2; text-transform: uppercase;
+	color:$gray; font-size:$l; text-align:center;text-transform: uppercase;
+	padding:$xs*2 $xs $xs;
 }
 #interior__item__image{
 	max-width: 100%; width:auto;
 	display:block;
 	margin:0 auto;
 }
+.back{
+	position:absolute; top:20px; right:20px;
+	padding:4px;
+	width:40px; height:40px;
+	background-color:rgba(26, 26, 26, 0.8);
+	background-image:url('../icon/back_gray.png'); background-position:center; background-repeat:no-repeat;
+	&:hover{
+		background-color:rgba(26, 26, 26, 1);
+		background-image:url('../icon/back_gray.png');
+	}
+}
 #next{
 	text-align:center; 
 	width:$xxl; height:$xxl*2;
-	background-color:rgba(255, 255, 255, 0.8);
+	background-color:rgba(26, 26, 26, 0.8);
 	position:fixed; top:calc(50% - 40px); right:20px;
-	background-image:url('../icon/next.png'); background-position:center; background-repeat:no-repeat;
+	background-image:url('../icon/next_gray.png'); background-position:center; background-repeat:no-repeat;
 	&:hover{
-		background-color:rgba(255, 255, 255, 1);
-		background-image:url('../icon/next_hover.png');
+		background-color:rgba(26, 26, 26, 1);
+		background-image:url('../icon/next_gray.png');
 	}
 }
 #previous{
 	@extend #next;
-	background-image:url('../icon/previous.png'); background-position:center; background-repeat:no-repeat;
+	background-image:url('../icon/previous_gray.png'); background-position:center; background-repeat:no-repeat;
 	left:20px;
 	&:hover{
-		background-image:url('../icon/previous_hover.png');
+		background-image:url('../icon/previous_gray.png');
 	}
 }
 @media (max-width: 640px){
 	.back{
 	position:absolute; top:10px; right:10px;
 	}
-	#interior__container{
-		padding:10px;
-	}
 	.interior__item__title{
-	font-size:$m; line-height:$m*2;
+	font-size:$m;
 	}
 	#next{
 		top:calc(50% - 30px);

@@ -29,10 +29,10 @@
 						<h3 class="navigation__item__name">Portfolio</h3>
 					</a>
 				</li>	
-				<li class="navigation__item--selected">
+				<li class="navigation__item navigation__item--selected">
 					<a href="resume.html">
-						<img class="navigation__item__icon--selected" src="icon/nav/resume_selected.svg"/>
-						<h3 class="navigation__item__name--selected">Resume</h3>
+						<img class="navigation__item__icon" src="icon/nav/resume_selected.svg"/>
+						<h3 class="navigation__item__name">Resume</h3>
 					</a>
 				</li>
 				<li class="navigation__item">
@@ -62,55 +62,139 @@
   		<aside class="resume__navigation">
   			<ul>
   				<li class="resume__navigation__item"><a href="#exhibitions">Exhibitions</a></li>
-  				<li class="resume__navigation__item"><a href="#selectedcollections">Selected Collections</a></li>
-  				<li class="resume__navigation__item"><a href="">Gallery Representation</a></li>
-  				<li class="resume__navigation__item"><a href="">Publications and Articles</a></li>
-  				<li class="resume__navigation__item"><a href="">Teaching</a></li>
+  				<li class="resume__navigation__item"><a href="#collections">Selected Collections</a></li>
+  				<li class="resume__navigation__item"><a href="#galleries">Gallery Representation</a></li>
+  				<li class="resume__navigation__item"><a href="#publications">Publications and Articles</a></li>
+  				<li class="resume__navigation__item"><a href="#teaching">Teaching</a></li>
   			</ul>
   		</aside>
-
-		<a name="exhibitions"></a>
-  		<header class="resume__exhibitions__header">
-			<h1 class="resume__exhibitions__header__title">Exhibitions</h1>
-			<p class="resume__exhibitions__header__description">Maecenas eget ipsum volutpat, varius nunc quis, facilisis odio. Aliquam faucibus, odio eget vestibulum volutpat, diam velit venenatis quam, et cursus magna nibh fringilla arcu. Phasellus bibendum quis metus in viverra. Aliquam pellentesque leo eu elit dapibus consectetur.</p>
-		</header>
 		
-		<section class="resume__exhibitions" id="exhibition__container">
-			
+		<section class="resume__container">
+			<!-- Exhibitions -->
+			<a name="exhibitions" class="anchor">&nbsp;</a>
+	  		<header class="resume__category resume__category--top">
+				<h1 class="resume__category__header">Exhibitions</h1>
+				<p class="resume__category__description">Maecenas eget ipsum volutpat, varius nunc quis, facilisis odio. Aliquam faucibus, odio eget vestibulum volutpat, diam velit venenatis quam, et cursus magna nibh fringilla arcu. Phasellus bibendum quis metus in viverra. Aliquam pellentesque leo eu elit dapibus consectetur.</p>
+			</header>
+			<section class="exhibition" id="exhibition__container"></section>
+
+			<!-- Selected Collections -->
+			<a name="collections" class="anchor">&nbsp;</a>
+			<header class="resume__category">
+				<h1 class="resume__category__header">Selected Collections</h1>
+				<p class="resume__category__description">
+				Maecenas eget ipsum volutpat, varius nunc quis, facilisis odio. Aliquam faucibus, odio eget vestibulum volutpat, diam velit venenatis quam, et cursus magna nibh fringilla arcu. Phasellus bibendum quis metus in viverra. Aliquam pellentesque leo eu elit dapibus consectetur.
+				Private collection information is available upon request.</p>
+			</header>
+			<h2 class="sub-title">Selected Collections</h2>
+			<section class="collections" id="collection__container">
+			</section>
+			<h2 class="sub-title sub-title--private_collection">Private Collections</h2>
+			<section class="resume__item">
+				<p class="resume__item--collections--private">Private collection information is available upon request.</p>
+			</section>
+
+
+			<!-- Gallery Representation -->
+			<a name="galleries" class="anchor">&nbsp;</a>
+			<header class="resume__category">
+				<h1 class="resume__category__header">Gallery Representation</h1>
+				<p class="resume__category__description">Maecenas eget ipsum volutpat, varius nunc quis, facilisis odio. Aliquam faucibus, odio eget vestibulum volutpat, diam velit venenatis quam, et cursus magna nibh fringilla arcu. Phasellus bibendum quis metus in viverra. Aliquam pellentesque leo eu elit dapibus consectetur.</p>
+			</header>
+			<section class="resume__galleries" id="gallery__container"></section>
+
+			<!-- Publications and Articles -->
+			<a name="publications" class="anchor">&nbsp;</a>
+			<header class="resume__category">
+				<h1 class="resume__category__header">Publications and Articles</h1>
+				<p class="resume__category__description">Maecenas eget ipsum volutpat, varius nunc quis, facilisis odio. Aliquam faucibus, odio eget vestibulum volutpat, diam velit venenatis quam, et cursus magna nibh fringilla arcu. Phasellus bibendum quis metus in viverra. Aliquam pellentesque leo eu elit dapibus consectetur.</p>
+			</header>
+			<section class="publications" id="publication__container"></section>
+
+			<!-- Teachin -->
+			<a name="teachings" class="anchor">&nbsp;</a>
+			<header class="resume__category">
+				<h1 class="resume__category__header">Teaching</h1>
+				<p class="resume__category__description">Maecenas eget ipsum volutpat, varius nunc quis, facilisis odio. Aliquam faucibus, odio eget vestibulum volutpat, diam velit venenatis quam, et cursus magna nibh fringilla arcu. Phasellus bibendum quis metus in viverra. Aliquam pellentesque leo eu elit dapibus consectetur.</p>
+			</header>
+			<section class="teachings" id="teaching__container"></section>
 		</section>
 
-		<a name="selectedcollections"></a>
+		<a class="up" href="#top"></a>
 	</main>
 
+	<!-- Exhibitions -->
 	<script id="exhibitionTemplate" type="text/x-handlebars-template">
-		<h2 class="resume__exhibitions__year">{{year}}</h2>
+		<h2 class="exhibition__year sub-title">{{year}}</h2>
         {{#each exhibitions}}
-			<section class="resume__exhibitions__item">
-				<p class="resume__exhibitions__item__type">{{type}}</p>
-				<p class="resume__exhibitions__item__details">{{details}}</p>
-				<p class="resume__exhibitions__item__location">{{location}}</p>
+			<section class="resume__item">
+				<p class="resume__item--exhibition--type">{{type}}</p>
+				<p class="resume__item--exhibition--details">{{details}}</p>
+				<p class="resume__item--exhibition--location">{{location}}</p>
 			</section>
         {{/each}}
     </script>
+
+	<!-- Selected Collections -->
+    <script id="collectionTemplate" type="text/x-handlebars-template">
+		<ul class="resume__item">
+			<li class="resume__item--list">{{location}}</li>
+		</ul>
+    </script>
+
+	<!-- Gallery Representation -->
+    <script id="galleryTemplate" type="text/x-handlebars-template">
+		<ul class="resume__item">
+			<li class="resume__item--list">{{duration}}<a class="resume__item--link" href="{{link}}">{{name}}</a>{{location}} </li>
+		</ul>
+    </script>
+
+    <!-- Publications and Articles -->
+    <script id="publicationTemplate" type="text/x-handlebars-template">
+		<section class="resume__item">
+			<p class="resume__item--publications--year">{{year}}</p>
+			<p class="resume__item--publications--content"><a class="resume__item--link" href="{{link}}">{{content}}</a>, {{publisher}}</p>
+		</section>
+    </script>
+
+	<!-- Teaching -->
+    <script id="teachingTemplate" type="text/x-handlebars-template">
+		<section class="resume__item">
+			<p class="resume__item--teaching--year">{{year}}</p>
+			<p class="resume__item--teaching--content">{{name}}, {{type}},{{location}}</p>
+		</section>
+    </script>
+
+
+
 
 	<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
 	<script src="lib/handlebars-v1.3.0.js"></script>
 	<script src="js/modernizr-latest.js"></script>
 	<script src="lib/lodash.min.js"></script>
+	
 	<script type="text/javascript">
 	$(function () {
 		var exhibitionTemplateHtml = $("#exhibitionTemplate").html();
 		var exhibitionTemplateFunction = Handlebars.compile(exhibitionTemplateHtml);
 
+		var collectionTemplateHtml = $("#collectionTemplate").html();
+		var collectionTemplateFunction = Handlebars.compile(collectionTemplateHtml);
 
-		$.get("data/resume.json", function (resumeData) {
+		var galleryTemplateHtml = $("#galleryTemplate").html();
+		var galleryTemplateFunction = Handlebars.compile(galleryTemplateHtml);
 
-			var exhibitions = resumeData.exhibitions;
+		var publicationTemplateHtml = $("#publicationTemplate").html();
+		var publicationTemplateFunction = Handlebars.compile(publicationTemplateHtml);
+
+		var teachingTemplateHtml = $("#teachingTemplate").html();
+		var teachingTemplateFunction = Handlebars.compile(teachingTemplateHtml);
+
+
+
+		$.get("data/exhibitions.json", function (exhibitions) {
 
 			var groupedByYear = _.groupBy(exhibitions, function(exhibition) { return exhibition.year; });
-
-			//var sortedByYear = _.sortBy(groupedByYear, function (group) { return Number(group); });
-
 
 			_.forEachRight(groupedByYear, function (exhibitions, year) {
 				var outputHtml = exhibitionTemplateFunction({exhibitions: exhibitions, year: year});
@@ -118,10 +202,42 @@
 			});
 		});
 
+		$.get("data/collections.json", function (collections) {
+			_.forEach(collections, function (collections) {
+				var outputHtml = collectionTemplateFunction(collections);
+				$("#collection__container").append(outputHtml);
+			});
+		});
+
+		$.get("data/galleries.json", function (galleries) {
+			_.forEach(galleries, function (galleries) {
+				var outputHtml = galleryTemplateFunction(galleries);
+				$("#gallery__container").append(outputHtml);
+			});
+		});
+
+		$.get("data/publications.json", function (publications) {
+			_.forEach(publications, function (publications) {
+				var outputHtml = publicationTemplateFunction(publications);
+				$("#publication__container").append(outputHtml);
+			});
+		});
+
+		$.get("data/teachings.json", function (teachings) {
+			_.forEach(teachings, function (teachings) {
+				var outputHtml = teachingTemplateFunction(teachings);
+				$("#teaching__container").append(outputHtml);
+			});
+		});
+
+
 		$(".resume__navigation__item").click(function (event) {
 			$(".resume__navigation__item").removeClass("selected");
-			$(event.currentTarget).addClass("selected");
+			$(event.currentTarget).addClass("resume__navigation__item--selected");
 		});
+
+		// var headerHeight = $("header").height();
+		// $("main").css("padding-top", (headerHeight+30) + "px");
 	});
 
 
