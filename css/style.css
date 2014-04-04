@@ -87,7 +87,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   content: "";
   background-color: white;
   width: 20px;
-  height: 100%;
+  height: 20px;
   position: absolute;
   top: 0;
   left: -20px;
@@ -97,7 +97,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   content: "";
   background-color: white;
   width: 20px;
-  height: 100%;
+  height: 20px;
   position: absolute;
   top: 0;
   right: -20px;
@@ -184,63 +184,91 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @media (max-width: 768px) {
   /* line 83, ../scss/_header.scss */
+  .global__header {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+  }
+  /* line 86, ../scss/_header.scss */
+  .global__header::before {
+    width: 20px;
+    left: -20px;
+  }
+  /* line 90, ../scss/_header.scss */
+  .global__header::after {
+    width: 20px;
+    right: -20px;
+  }
+
+  /* line 95, ../scss/_header.scss */
   .logo__name {
     font-size: 30px;
   }
 }
 @media (max-width: 640px) {
-  /* line 88, ../scss/_header.scss */
+  /* line 100, ../scss/_header.scss */
   .global__header {
     width: calc(100% - 20px);
     margin: 0 10px;
   }
-  /* line 91, ../scss/_header.scss */
+  /* line 103, ../scss/_header.scss */
   .global__header::before {
     width: 10px;
     left: -10px;
   }
-  /* line 95, ../scss/_header.scss */
+  /* line 107, ../scss/_header.scss */
   .global__header::after {
     width: 10px;
     right: -10px;
   }
 
-  /* line 100, ../scss/_header.scss */
+  /* line 112, ../scss/_header.scss */
   .navigation__item__icon, .navigation__item--selected .navigation__item__icon {
     display: none;
   }
 }
 @media (max-width: 480px) {
-  /* line 105, ../scss/_header.scss */
+  /* line 117, ../scss/_header.scss */
   .global__header {
-    position: inherit;
+    position: relative;
+    width: calc(100% - 20px);
+    margin: 0 10px;
+  }
+  /* line 121, ../scss/_header.scss */
+  .global__header::before {
+    width: 10px;
+    left: -10px;
+  }
+  /* line 125, ../scss/_header.scss */
+  .global__header::after {
+    width: 10px;
+    right: -10px;
   }
 
-  /* line 108, ../scss/_header.scss */
+  /* line 130, ../scss/_header.scss */
   .logo {
     width: 80%;
   }
 
-  /* line 111, ../scss/_header.scss */
+  /* line 133, ../scss/_header.scss */
   .logo__name {
     font-size: 41px;
   }
 
-  /* line 114, ../scss/_header.scss */
+  /* line 136, ../scss/_header.scss */
   .navigation {
     position: inherit;
     width: 20%;
     padding-top: 10px;
   }
-  /* line 118, ../scss/_header.scss */
+  /* line 140, ../scss/_header.scss */
   .navigation .navigation__item {
     float: right;
   }
-  /* line 121, ../scss/_header.scss */
+  /* line 143, ../scss/_header.scss */
   .navigation .navigation__item__icon {
     display: none;
   }
-  /* line 124, ../scss/_header.scss */
+  /* line 146, ../scss/_header.scss */
   .navigation .navigation__item__name {
     line-height: 24.6988px;
   }
@@ -602,21 +630,23 @@ body {
 .resume__navigation {
   width: 25%;
   display: inline-block;
+  float: right;
   border-right: 1px solid gray;
   margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
   left: 0;
 }
-/* line 17, ../scss/_resume.scss */
+/* line 18, ../scss/_resume.scss */
 .resume__navigation a {
   color: gray;
 }
-/* line 19, ../scss/_resume.scss */
+/* line 20, ../scss/_resume.scss */
 .resume__navigation a:hover {
   color: #1a1a1a;
 }
 
-/* line 25, ../scss/_resume.scss */
+/* line 26, ../scss/_resume.scss */
 .resume__navigation__item {
   font-size: 17px;
   text-align: right;
@@ -627,7 +657,7 @@ body {
   padding: 5px;
 }
 
-/* line 31, ../scss/_resume.scss */
+/* line 32, ../scss/_resume.scss */
 .resume__navigation__item--selected a {
   color: #f15a24;
 }
@@ -638,7 +668,7 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   width: 75%;
   float: right;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 /* line 42, ../scss/_resume.scss */
@@ -646,26 +676,24 @@ body {
   display: inline-block;
 }
 
-/* line 46, ../scss/_resume.scss */
+/* line 45, ../scss/_resume.scss */
 .resume__category__header {
-  color: #f15a24;
+  color: #1a1a1a;
   font-size: 60px;
   font-weight: bold;
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
-/* line 50, ../scss/_resume.scss */
+/* line 48, ../scss/_resume.scss */
 .resume__category__description {
   color: gray;
   font-size: 17px;
-  line-height: 30px;
-  padding: 10px;
-  padding-top: 0;
-  padding-bottom: 30px;
+  line-height: 25.5px;
+  padding: 17px 0;
 }
 
-/* line 54, ../scss/_resume.scss */
-.sub-title {
+/* line 52, ../scss/_resume.scss */
+.exhibition__year {
   color: gray;
   font-size: 23px;
   line-height: 30px;
@@ -673,13 +701,38 @@ body {
   border-bottom: 1px solid #cccccc;
 }
 
-/* line 58, ../scss/_resume.scss */
+/* line 56, ../scss/_resume.scss */
+.sub-title {
+  color: gray;
+  font-size: 17px;
+  line-height: 25.5px;
+  font-style: italic;
+  border-bottom: 1px solid #cccccc;
+}
+
+/* line 60, ../scss/_resume.scss */
 .sub-title--private_collection {
   padding-top: 17px;
 }
 
-/* line 61, ../scss/_resume.scss */
+/* line 63, ../scss/_resume.scss */
 .resume__item {
+  display: inline-block;
+  width: 100%;
+  font-size: 17px;
+  line-height: 25.5px;
+  color: #1a1a1a;
+  letter-spacing: 0.5px;
+  padding: 6.5px 0;
+}
+
+/* line 69, ../scss/_resume.scss */
+.exhibition, .resume__item--collections--private, .galleries, .publications, .teaching {
+  margin-bottom: 60px;
+}
+
+/* line 72, ../scss/_resume.scss */
+.resume__item--exhibition {
   display: inline-block;
   width: 100%;
   font-size: 13px;
@@ -689,23 +742,22 @@ body {
   padding: 6.5px 0;
 }
 
-/* line 68, ../scss/_resume.scss */
+/* line 78, ../scss/_resume.scss */
 .resume__item--list {
-  font-size: 17px;
-  list-style: square inside none;
+  list-style: square outside none;
 }
 
-/* line 74, ../scss/_resume.scss */
+/* line 81, ../scss/_resume.scss */
+.resume__item--link {
+  color: #1a1a1a;
+  font-weight: bold;
+}
+/* line 84, ../scss/_resume.scss */
 .resume__item--link:hover {
   color: #f15a24;
 }
 
-/* line 78, ../scss/_resume.scss */
-.resume__item--collections--private {
-  font-style: italic;
-}
-
-/* line 81, ../scss/_resume.scss */
+/* line 89, ../scss/_resume.scss */
 .resume__item--exhibition--type {
   display: inline-block;
   vertical-align: top;
@@ -713,7 +765,7 @@ body {
   width: 25%;
 }
 
-/* line 85, ../scss/_resume.scss */
+/* line 93, ../scss/_resume.scss */
 .resume__item--exhibition--details {
   display: inline-block;
   vertical-align: top;
@@ -721,7 +773,7 @@ body {
   width: 50%;
 }
 
-/* line 89, ../scss/_resume.scss */
+/* line 97, ../scss/_resume.scss */
 .resume__item--exhibition--location {
   display: inline-block;
   vertical-align: top;
@@ -730,39 +782,52 @@ body {
   text-align: right;
 }
 
-/* line 94, ../scss/_resume.scss */
-.resume__item--publications--year, .resume__item--teaching--year {
-  color: gray;
-  font-size: 17px;
-  line-height: 34px;
-  font-style: italic;
+@media (min-width: 1024px) {
+  /* line 105, ../scss/_resume.scss */
+  .resume__navigation__item {
+    font-size: 23px;
+    padding: 10px;
+  }
 }
-
-/* line 97, ../scss/_resume.scss */
-.resume__item--publications--content, .resume__item--teaching--content {
-  font-size: 17px;
-}
-
 @media (max-width: 640px) {
-  /* line 104, ../scss/_resume.scss */
+  /* line 111, ../scss/_resume.scss */
+  .resume__category__header {
+    font-size: 41px;
+  }
+
+  /* line 114, ../scss/_resume.scss */
+  .resume__category__description {
+    font-size: 13px;
+    line-height: 19.5px;
+    padding: 10px 0;
+  }
+
+  /* line 118, ../scss/_resume.scss */
+  .resume__item {
+    font-size: 13px;
+    line-height: 19.5px;
+    letter-spacing: 0.5px;
+  }
+
+  /* line 121, ../scss/_resume.scss */
   .resume__navigation__item {
     font-size: 13px;
   }
 }
 @media (max-width: 480px) {
-  /* line 110, ../scss/_resume.scss */
+  /* line 127, ../scss/_resume.scss */
   .resume__navigation__item {
     display: none;
   }
 
-  /* line 113, ../scss/_resume.scss */
+  /* line 130, ../scss/_resume.scss */
   .resume__container {
     margin-left: 0;
     padding-left: 0px;
     width: 100%;
   }
 
-  /* line 117, ../scss/_resume.scss */
+  /* line 134, ../scss/_resume.scss */
   .resume__category {
     margin-left: 0;
     padding-left: 0px;

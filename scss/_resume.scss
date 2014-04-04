@@ -10,9 +10,10 @@ body{
 }
 
 .resume__navigation{
-	width:25%; display:inline-block;
+	width:25%; display:inline-block; float:right;
 	border-right:1px solid $gray;
 	margin-top:$xl; 
+	background-color:rgba(255,255,255,0.9);
 	position:fixed; left:0;
 	a{
 		color:$gray;
@@ -32,27 +33,28 @@ body{
 		color:$red;
 	}
 }
-
 .resume__container{
 	display:inline-block;
 	font-family:$sans-serif;
 	width:75%; float:right;
-	padding-left:$xs;
+	padding-left:$xs*2;
 }
 .resume__category{
 	display:inline-block;
 }
-
 .resume__category__header{
-	color:$red; font-size:$xl*2; font-weight:bold; font-family:$serif;
+	color:$black; font-size:$xl*2; font-weight:bold; font-family:$serif;	
 }
-
 .resume__category__description{
-	color:$gray; font-size:$m; line-height:$xl;
-	padding:$xs; padding-top:0; padding-bottom:$xl;
+	color:$gray; font-size:$m; line-height:$m*1.5;
+	padding:$m 0;
+}
+.exhibition__year{
+	color:$gray; font-size:$l; line-height:$xl; font-style:italic;
+	border-bottom:1px solid $light-gray; 
 }
 .sub-title{
-	color:$gray; font-size:$l; line-height:$xl; font-style:italic;
+	color:$gray; font-size:$m; line-height:$m*1.5; font-style:italic;
 	border-bottom:1px solid $light-gray; 
 }
 .sub-title--private_collection{
@@ -61,23 +63,29 @@ body{
 .resume__item{
 	display:inline-block; 
 	width:100%;
+	font-size:$m; line-height:$m*1.5; color:$black; letter-spacing:0.5px;
+	padding: $s/2 0;
+}
+.exhibition, .resume__item--collections--private, .galleries, .publications, .teaching{
+	margin-bottom:$xl*2;
+}
+.resume__item--exhibition{
+	display:inline-block; 
+	width:100%;
 	font-size:$s; line-height:$s*1.5; color:$black; letter-spacing:0.5px;
 	padding: $s/2 0;
 }
-
 .resume__item--list{
-	font-size:$m; // font-weight:bold;
-	list-style: square inside none;
+	list-style: square outside none;
 }
 .resume__item--link{
-	//text-decoration:underline;
+	color:$black;
+	font-weight:bold;
 	&:hover{
 		color:$red;
 	}
 }
-.resume__item--collections--private{
-	font-style:italic;
-}
+
 .resume__item--exhibition--type{
 	display:inline-block;vertical-align:top;float:left;
 	width:25%; 
@@ -91,16 +99,25 @@ body{
 	width:25%;
 	text-align:right;
 }
-.resume__item--publications--year, .resume__item--teaching--year{
-	color:$gray; font-size:$m; line-height:$m*2; font-style:italic;
+
+
+@media (min-width: 1024px){
+	.resume__navigation__item{
+	font-size:$l; 
+	padding:$xs;
+	} 
 }
-.resume__item--publications--content, .resume__item--teaching--content{
-	font-size:$m; 
-}
-
-
-
 @media (max-width: 640px){
+	.resume__category__header{
+	font-size:$xxl;
+	}
+	.resume__category__description{
+	font-size:$s; line-height:$s*1.5;
+	padding:$xs 0;
+	}
+	.resume__item{
+	font-size:$s; line-height:$s*1.5; letter-spacing:0.5px;
+	}
 	.resume__navigation__item{
 	font-size:$s; 
 	}

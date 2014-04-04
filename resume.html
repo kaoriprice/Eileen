@@ -87,8 +87,8 @@
 				Private collection information is available upon request.</p>
 			</header>
 			<h2 class="sub-title">Selected Collections</h2>
-			<section class="collections" id="collection__container">
-			</section>
+			<ul class="collections" id="collection__container">
+			</ul>
 			<h2 class="sub-title sub-title--private_collection">Private Collections</h2>
 			<section class="resume__item">
 				<p class="resume__item--collections--private">Private collection information is available upon request.</p>
@@ -101,7 +101,7 @@
 				<h1 class="resume__category__header">Gallery Representation</h1>
 				<p class="resume__category__description">Maecenas eget ipsum volutpat, varius nunc quis, facilisis odio. Aliquam faucibus, odio eget vestibulum volutpat, diam velit venenatis quam, et cursus magna nibh fringilla arcu. Phasellus bibendum quis metus in viverra. Aliquam pellentesque leo eu elit dapibus consectetur.</p>
 			</header>
-			<section class="resume__galleries" id="gallery__container"></section>
+			<ul class="galleries" id="gallery__container"></ul>
 
 			<!-- Publications and Articles -->
 			<a name="publications" class="anchor">&nbsp;</a>
@@ -125,9 +125,9 @@
 
 	<!-- Exhibitions -->
 	<script id="exhibitionTemplate" type="text/x-handlebars-template">
-		<h2 class="exhibition__year sub-title">{{year}}</h2>
+		<h2 class="exhibition__year">{{year}}</h2>
         {{#each exhibitions}}
-			<section class="resume__item">
+			<section class="resume__item resume__item--exhibition">
 				<p class="resume__item--exhibition--type">{{type}}</p>
 				<p class="resume__item--exhibition--details">{{details}}</p>
 				<p class="resume__item--exhibition--location">{{location}}</p>
@@ -137,22 +137,22 @@
 
 	<!-- Selected Collections -->
     <script id="collectionTemplate" type="text/x-handlebars-template">
-		<ul class="resume__item">
+		<section class="resume__item">
 			<li class="resume__item--list">{{location}}</li>
-		</ul>
+		</section>
     </script>
 
 	<!-- Gallery Representation -->
     <script id="galleryTemplate" type="text/x-handlebars-template">
-		<ul class="resume__item">
-			<li class="resume__item--list">{{duration}}<a class="resume__item--link" href="{{link}}">{{name}}</a>{{location}} </li>
-		</ul>
+		<section class="resume__item">
+			<li class="resume__item--list">{{duration}}, <a class="resume__item--link" href="{{link}}">{{name}}</a>, {{location}}</li>
+		</section>
     </script>
 
     <!-- Publications and Articles -->
     <script id="publicationTemplate" type="text/x-handlebars-template">
 		<section class="resume__item">
-			<p class="resume__item--publications--year">{{year}}</p>
+			<p class="sub-title">{{year}}</p>
 			<p class="resume__item--publications--content"><a class="resume__item--link" href="{{link}}">{{content}}</a>, {{publisher}}</p>
 		</section>
     </script>
@@ -160,8 +160,8 @@
 	<!-- Teaching -->
     <script id="teachingTemplate" type="text/x-handlebars-template">
 		<section class="resume__item">
-			<p class="resume__item--teaching--year">{{year}}</p>
-			<p class="resume__item--teaching--content">{{name}}, {{type}},{{location}}</p>
+			<p class="sub-title">{{year}}</p>
+			<p class="resume__item--teaching--content">{{name}}, {{type}}, {{location}}</p>
 		</section>
     </script>
 
