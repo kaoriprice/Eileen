@@ -13,24 +13,3 @@
 a{
 	text-decoration:none;
 }
-
-@media (min-width: 768px){
-	.portfolio, .resume, .anchor{
-		padding-top:100px;
-	}
-}
-@media (max-width: 768px){
-	.portfolio, .resume, .anchor{
-		padding-top:80px;
-	}
-}
-@media (max-width: 640px)and(min-width: 480px){
-	.portfolio, .resume, .anchor{
-		padding-top:73px;
-	}
-}
-@media(max-width:480px){
-	.portfolio, .resume,.anchor{
-		padding-top:5px;
-	}
-}

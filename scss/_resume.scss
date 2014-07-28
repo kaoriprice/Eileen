@@ -40,7 +40,7 @@ body{
 
 .resume__container{
 	display:inline-block;
-	font-size:$s; font-family:$sans-serif; line-height:1.3;
+	font-size:$s; font-family:$sans-serif; line-height:1;
 	width:65%; float:right;
 	padding-left:$xs;
 	@media (max-width: 480px){
@@ -53,7 +53,6 @@ body{
 	width:100%; 
 	color:$red; font-size:$m; font-weight:bold;	
 	border-bottom:1px solid $light-gray; 
-	margin-top:$xs;
 	margin-bottom:$xs;
 }
 .sub-category{
@@ -92,6 +91,7 @@ body{
 		color:$red;
 	}
 }
+
 
 @media (max-width: 1024px){
 	.resume__nav__item{

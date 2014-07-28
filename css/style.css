@@ -497,7 +497,6 @@ figcaption {
 /* line 20, ../scss/_interior.scss */
 #interior__item__image {
   max-width: 100%;
-  width: auto;
   display: block;
   margin: 0 auto;
 }
@@ -640,7 +639,7 @@ body {
   display: inline-block;
   font-size: 13px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  line-height: 1.3;
+  line-height: 1;
   width: 65%;
   float: right;
   padding-left: 10px;
@@ -660,50 +659,49 @@ body {
   font-size: 17px;
   font-weight: bold;
   border-bottom: 1px solid #cccccc;
-  margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* line 59, ../scss/_resume.scss */
+/* line 58, ../scss/_resume.scss */
 .sub-category {
   color: #1a1a1a;
   font-size: 13px;
   font-weight: bold;
 }
 @media (max-width: 480px) {
-  /* line 59, ../scss/_resume.scss */
+  /* line 58, ../scss/_resume.scss */
   .sub-category {
     font-size: 10px;
   }
 }
 
-/* line 67, ../scss/_resume.scss */
+/* line 66, ../scss/_resume.scss */
 .year {
   font-size: 10px;
 }
 
-/* line 70, ../scss/_resume.scss */
+/* line 69, ../scss/_resume.scss */
 .exhibition__year {
   float: left;
 }
 
-/* line 73, ../scss/_resume.scss */
+/* line 72, ../scss/_resume.scss */
 .exhibition__data {
   float: left;
   width: auto;
 }
 
-/* line 76, ../scss/_resume.scss */
+/* line 75, ../scss/_resume.scss */
 .private__collection {
   font-style: italic;
 }
 
-/* line 79, ../scss/_resume.scss */
+/* line 78, ../scss/_resume.scss */
 .italic {
   font-style: italic;
 }
 
-/* line 83, ../scss/_resume.scss */
+/* line 82, ../scss/_resume.scss */
 .resume__content {
   display: inline-block;
   width: 100%;
@@ -711,12 +709,12 @@ body {
   color: #1a1a1a;
 }
 
-/* line 88, ../scss/_resume.scss */
+/* line 87, ../scss/_resume.scss */
 .resume__content--link {
   color: #1a1a1a;
   text-decoration: underline;
 }
-/* line 91, ../scss/_resume.scss */
+/* line 90, ../scss/_resume.scss */
 .resume__content--link:hover {
   color: #f15a24;
 }
@@ -754,29 +752,4 @@ body {
 /* line 13, ../scss/style.scss */
 a {
   text-decoration: none;
-}
-
-@media (min-width: 768px) {
-  /* line 18, ../scss/style.scss */
-  .portfolio, .resume, .anchor {
-    padding-top: 100px;
-  }
-}
-@media (max-width: 768px) {
-  /* line 23, ../scss/style.scss */
-  .portfolio, .resume, .anchor {
-    padding-top: 80px;
-  }
-}
-@media (max-width: 640px) and (min-width: 480px) {
-  /* line 28, ../scss/style.scss */
-  .portfolio, .resume, .anchor {
-    padding-top: 73px;
-  }
-}
-@media (max-width: 480px) {
-  /* line 33, ../scss/style.scss */
-  .portfolio, .resume, .anchor {
-    padding-top: 5px;
-  }
 }

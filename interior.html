@@ -55,10 +55,18 @@
 			$("#previous").attr("href", "interior.html?" + (index-1));
 
 			//calculate the desired size of the image
-			var height = $(window).height();
-			var headerHeight = $("header").height();
-			var figcaptionHeight = $("figcaption").height();
-			$("#interior__item__image").height(height - headerHeight - figcaptionHeight - 20);
+			var wy = $(window).height();
+			var wx = $(window).height();
+
+			var iy = $("#interior__item__image").height();
+			var ix = $("#interior__item__image").width();
+
+			var ratio = iy/ix;
+
+			var desiredIx = wx;
+			var desiredIy = wx * ratio;			
+
+			$("#interior__item__image").height(desiredIy).width(desiredIx);
 
 		});
 	});
