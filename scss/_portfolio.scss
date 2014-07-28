@@ -72,16 +72,16 @@ figcaption{
 	margin:0;
 }
 .portfolio__item__zoom{
-	position:absolute; top:-30px; right:10px;
+	position:absolute; top:-30px; right:$xs;
 	//left:calc(50% - 15px); //center
 	display:none;
 }
 .portfolio__item__title{
-	padding:$xs/2;  color:$gray;
-	font-size:$m; text-transform: uppercase; letter-spacing:1px;
+	padding:$xs;  color:$gray;
+	font-size:$m; text-transform: uppercase;
 }
 .portfolio__item__data{
-	padding:0 $xs/2;  color:$gray; margin-top:-$xs/2;
+	padding:0 $xs;  color:$gray; margin-top:-$xs/2;
 	font-size:$m; font-variant:small-caps; 
 	span{
 		font-size:$s;
@@ -89,8 +89,8 @@ figcaption{
 
 }
 .portfolio__item__price{
-	padding:$xs/2;  color:$gray;
-	font-size: $s;line-height:$m; text-transform: uppercase; font-style:italic;text-align: right;
+	padding:$xs;  color:$gray;
+	font-size: $s;line-height:$m; text-transform: uppercase; text-align: right;
 }
 
 @media (min-width: 1680px){
@@ -110,33 +110,33 @@ figcaption{
 
 @media (min-width: 1024px){
 	.portfolio, .interior, .resume, #interior__container{
-		padding:10px;
+		padding:$xs;
 	}
 	#container{
 		.portfolio__item{
-			padding:10px;
+			padding:$xs;
 			width:calc(100%/4);
 		}
 	}
 }
 @media (max-width: 1024px){
 	.portfolio, .interior, .resume, #interior__container{
-		padding:10px;
+		padding:$xs;
 	}
 	#container{
 		.portfolio__item{
-			padding:10px;
+			padding:$xs;
 			width:calc(100%/3);
 		}
 	}
 }
 @media (max-width: 768px){
 	.portfolio, .interior, .resume, #interior__container{
-		padding:10px;
+		padding:$xs;
 	}
 	#container{
 		.portfolio__item{
-			padding:10px;
+			padding:$xs;
 			width:calc(100%/2);
 			.portfolio__item__title{
 				//font-size:$s;
@@ -146,11 +146,11 @@ figcaption{
 }
 @media (max-width: 640px){
 	.portfolio, .interior, .resume, #interior__container{
-		padding:5px
+		padding:$xs;
 	}
 	#container{
 		.portfolio__item{
-			padding:5px;
+			padding:$xs;
 			width:calc(100%/1);
 		}
 	}
@@ -158,11 +158,11 @@ figcaption{
 }
 @media (max-width: 320px){
 	.portfolio, .interior, .resume, #interior__container{
-		padding:5px
+		padding:$xs;
 	}
 	#container{
 		.portfolio__item{
-			padding:5px;
+			padding:$xs;
 			width:calc(100%/1);
 		}
 	}

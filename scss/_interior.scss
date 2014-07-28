@@ -8,10 +8,14 @@
 		z-index: -3;
 	}
 }
-
-.interior__item__title{
+#interior__item__title{
 	color:$gray; font-size:$l; text-align:center;text-transform: uppercase;
+	//font-style: italic;
 	padding:$xs*2 $xs $xs;
+}
+#interior__item__data{
+	color:$gray; font-size:$m; text-align:center;text-transform:capitalize;
+	padding:0 0 $xs 0;
 }
 #interior__item__image{
 	max-width: 100%; width:auto;
@@ -52,7 +56,7 @@
 	.back{
 	position:absolute; top:10px; right:10px;
 	}
-	.interior__item__title{
+	.interior__item__data{
 	font-size:$m;
 	}
 	#next{

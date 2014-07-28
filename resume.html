@@ -21,36 +21,36 @@
 			<h2 class="logo__tag">Visual Artist</h2>
 		</div>
 
-		<nav class="navigation">
+		<nav class="nav">
 			<ul>
-				<li class="navigation__item">
+				<li class="nav__item">
 					<a href="index.html">
-						<img class="navigation__item__icon" src="icon/nav/portfolio.svg"/>
-						<h3 class="navigation__item__name">Portfolio</h3>
+						<img class="nav__icon" src="icon/nav/portfolio.svg"/>
+						<h3 class="nav__name">Portfolio</h3>
 					</a>
 				</li>	
-				<li class="navigation__item navigation__item--selected">
+				<li class="nav__item nav__item--selected">
 					<a href="resume.html">
-						<img class="navigation__item__icon" src="icon/nav/resume_selected.svg"/>
-						<h3 class="navigation__item__name">Resume</h3>
+						<img class="nav__icon" src="icon/nav/resume_selected.svg"/>
+						<h3 class="nav__name">Resume</h3>
 					</a>
 				</li>
-				<li class="navigation__item">
+				<li class="nav__item">
 					<a href="statement.html">
-						<img class="navigation__item__icon" src="icon/nav/statement.svg"/>
-						<h3 class="navigation__item__name">Statement</h3>
+						<img class="nav__icon" src="icon/nav/statement.svg"/>
+						<h3 class="nav__name">Statement</h3>
 					</a>
 				</li>
-				<li class="navigation__item">
+				<li class="nav__item">
 					<a href="news.html">
-						<img class="navigation__item__icon" src="icon/nav/news.svg"/>
-						<h3 class="navigation__item__name">News</h3>
+						<img class="nav__icon" src="icon/nav/news.svg"/>
+						<h3 class="nav__name">News</h3>
 					</a>
 				</li>
-				<li class="navigation__item">
+				<li class="nav__item">
 					<a href="contact.html">
-						<img class="navigation__item__icon" src="icon/nav/contact.svg"/>
-						<h3 class="navigation__item__name">Contact</h3>
+						<img class="nav__icon" src="icon/nav/contact.svg"/>
+						<h3 class="nav__name">Contact</h3>
 					</a>
 				</li>
 			</ul>
@@ -59,65 +59,51 @@
 	</header>
 
 	<main class="resume">
-  		<aside class="resume__navigation">
+  		<aside class="resume__nav">
   			<ul>
-  				<li class="resume__navigation__item"><a href="#exhibitions">Exhibitions</a></li>
-  				<li class="resume__navigation__item"><a href="#collections">Selected Collections</a></li>
-  				<li class="resume__navigation__item"><a href="#galleries">Gallery Representation</a></li>
-  				<li class="resume__navigation__item"><a href="#publications">Publications and Articles</a></li>
-  				<li class="resume__navigation__item"><a href="#teaching">Teaching</a></li>
+  				<li class="resume__nav__item"><a href="#exhibitions">Exhibitions</a></li>
+  				<li class="resume__nav__item"><a href="#collections">Collections</a></li>
+  				<li class="resume__nav__item"><a href="#galleries">Galleries</a></li>
+  				<li class="resume__nav__item"><a href="#publications">Publications/Articles</a></li>
+  				<li class="resume__nav__item"><a href="#teachings">Teaching</a></li>
+  				<li class="resume__nav__item"><a href="#experiences">Arts Professional Experience</a></li>
   			</ul>
   		</aside>
 		
 		<section class="resume__container">
 			<!-- Exhibitions -->
-			<a name="exhibitions" class="anchor">&nbsp;</a>
-	  		<header class="resume__category resume__category--top">
-				<h1 class="resume__category__header">Exhibitions</h1>
-				<p class="resume__category__description">Maecenas eget ipsum volutpat, varius nunc quis, facilisis odio. Aliquam faucibus, odio eget vestibulum volutpat, diam velit venenatis quam, et cursus magna nibh fringilla arcu. Phasellus bibendum quis metus in viverra. Aliquam pellentesque leo eu elit dapibus consectetur.</p>
-			</header>
-			<section class="exhibition" id="exhibition__container"></section>
+			<a name="exhibitions" class="anchor"></a>
+			<h1 class="resume__content__title">Exhibitions</h1>
+			<ul class="exhibition" id="exhibitions__container"></ul>
 
 			<!-- Selected Collections -->
-			<a name="collections" class="anchor">&nbsp;</a>
-			<header class="resume__category">
-				<h1 class="resume__category__header">Selected Collections</h1>
-				<p class="resume__category__description">
-				Maecenas eget ipsum volutpat, varius nunc quis, facilisis odio. Aliquam faucibus, odio eget vestibulum volutpat, diam velit venenatis quam, et cursus magna nibh fringilla arcu. Phasellus bibendum quis metus in viverra. Aliquam pellentesque leo eu elit dapibus consectetur.
-				Private collection information is available upon request.</p>
-			</header>
-			<h2 class="sub-title">Selected Collections</h2>
-			<ul class="collections" id="collection__container">
-			</ul>
-			<h2 class="sub-title sub-title--private_collection">Private Collections</h2>
-			<section class="resume__item">
-				<p class="resume__item--collections--private">Private collection information is available upon request.</p>
-			</section>
+			<a name="collections" class="anchor"></a>
+			<h1 class="resume__content__title">Collections</h1>
+			<h2 class="sub-category">Public and Corporate Collections</h2>
+			<ul class="collections" id="collections__container"></ul>
+			<h2 class="sub-category">Private Collections</h2>
+			<ul class="private__collection">Furnished upon request</ul>
 
 
 			<!-- Gallery Representation -->
-			<a name="galleries" class="anchor">&nbsp;</a>
-			<header class="resume__category">
-				<h1 class="resume__category__header">Gallery Representation</h1>
-				<p class="resume__category__description">Maecenas eget ipsum volutpat, varius nunc quis, facilisis odio. Aliquam faucibus, odio eget vestibulum volutpat, diam velit venenatis quam, et cursus magna nibh fringilla arcu. Phasellus bibendum quis metus in viverra. Aliquam pellentesque leo eu elit dapibus consectetur.</p>
-			</header>
-			<ul class="galleries" id="gallery__container"></ul>
+			<a name="galleries" class="anchor"></a>
+			<h1 class="resume__content__title">Galleries</h1>
+			<ul class="galleries" id="galleries__container"></ul>
 
 			<!-- Publications and Articles -->
-			<a name="publications" class="anchor">&nbsp;</a>
-			<header class="resume__category">
-				<h1 class="resume__category__header">Publications and Articles</h1>
-				<p class="resume__category__description">Maecenas eget ipsum volutpat, varius nunc quis, facilisis odio. Aliquam faucibus, odio eget vestibulum volutpat, diam velit venenatis quam, et cursus magna nibh fringilla arcu. Phasellus bibendum quis metus in viverra. Aliquam pellentesque leo eu elit dapibus consectetur.</p>
-			</header>
-			<section class="publications" id="publication__container"></section>
+			<a name="publications" class="anchor"></a>
+			<h1 class="resume__content__title">Publications and Articles</h1>
+			<section class="publications" id="publications__container"></section>
 
-			<!-- Teachin -->
-			<a name="teachings" class="anchor">&nbsp;</a>
-			<header class="resume__category">
-				<h1 class="resume__category__header">Teaching</h1>
-				<p class="resume__category__description">Maecenas eget ipsum volutpat, varius nunc quis, facilisis odio. Aliquam faucibus, odio eget vestibulum volutpat, diam velit venenatis quam, et cursus magna nibh fringilla arcu. Phasellus bibendum quis metus in viverra. Aliquam pellentesque leo eu elit dapibus consectetur.</p>
-			</header>
-			<section class="teachings" id="teaching__container"></section>
+			<!-- Teaching -->
+			<a name="teachings" class="anchor"></a>
+			<h1 class="resume__content__title">Teaching</h1>
+			<section class="teachings" id="teachings__container"></section>
+
+			<!-- Experience -->
+			<a name="experiences" class="anchor"></a>
+			<h1 class="resume__content__title">Arts Professional Experience</h1>
+			<section class="experiences" id="experiences__container"></section>
 		</section>
 
 		<a class="up" href="#top"></a>
@@ -125,46 +111,43 @@
 
 	<!-- Exhibitions -->
 	<script id="exhibitionTemplate" type="text/x-handlebars-template">
-		<h2 class="exhibition__year">{{year}}</h2>
-        {{#each exhibitions}}
-			<section class="resume__item resume__item--exhibition">
-				<p class="resume__item--exhibition--type">{{type}}</p>
-				<p class="resume__item--exhibition--details">{{details}}</p>
-				<p class="resume__item--exhibition--location">{{location}}</p>
-			</section>
-        {{/each}}
+			<h2 class="sub-category">{{category}}</h2>
+		        {{#each years}}
+		        	<h3 class="exhibition__year"><span class="year">{{year}}&nbsp;</span></h3>
+			        <ul class="exhibition__data">
+			        	{{#each exhibitions}}
+						<li>{{type}}<span class="italic">{{title}}</span>{{details}} {{location}} <span class="italic">{{rank}}</span></li> 
+						{{/each}}
+					</ul>
+					<div style="clear: both;"></div>
+				</ul>
+		        {{/each}}
     </script>
 
-	<!-- Selected Collections -->
+	<!-- Collections -->
     <script id="collectionTemplate" type="text/x-handlebars-template">
-		<section class="resume__item">
-			<li class="resume__item--list">{{location}}</li>
-		</section>
+			<li class="resume__content--list">{{location}}</li>
     </script>
 
-	<!-- Gallery Representation -->
+	<!-- Galleries -->
     <script id="galleryTemplate" type="text/x-handlebars-template">
-		<section class="resume__item">
-			<li class="resume__item--list">{{duration}}, <a class="resume__item--link" href="{{link}}">{{name}}</a>, {{location}}</li>
-		</section>
+			<li class="resume__content--list"><span class="year">{{duration}}</span> <a class="resume__content--link" href="{{link}}">{{name}}</a>, {{location}}</li>
     </script>
 
-    <!-- Publications and Articles -->
+    <!-- Publications -->
     <script id="publicationTemplate" type="text/x-handlebars-template">
-		<section class="resume__item">
-			<p class="sub-title">{{year}}</p>
-			<p class="resume__item--publications--content"><a class="resume__item--link" href="{{link}}">{{content}}</a>, {{publisher}}</p>
-		</section>
+			<p class="resume__content--publications--content"><span class="year">{{year}}</span> <a class="resume__content--link" href="{{link}}">{{content}}</a>, {{publisher}}</p>
     </script>
 
 	<!-- Teaching -->
     <script id="teachingTemplate" type="text/x-handlebars-template">
-		<section class="resume__item">
-			<p class="sub-title">{{year}}</p>
-			<p class="resume__item--teaching--content">{{name}}, {{type}}, {{location}}</p>
-		</section>
+			<p class="resume__content--teaching--content"><span class="year">{{year}}</span> {{name}}, {{type}}, {{location}}</p>
     </script>
-
+	
+	<!-- Experience -->
+    <script id="experienceTemplate" type="text/x-handlebars-template">
+			<p class="resume__content--experiences--content"><span class="year">{{year}}</span> {{position}}{{title}}{{details}}{{location}}</p>
+    </script>
 
 
 
@@ -190,50 +173,76 @@
 		var teachingTemplateHtml = $("#teachingTemplate").html();
 		var teachingTemplateFunction = Handlebars.compile(teachingTemplateHtml);
 
+		var experienceTemplateHtml = $("#experienceTemplate").html();
+		var experienceTemplateFunction = Handlebars.compile(experienceTemplateHtml);
+
 
 
 		$.get("data/exhibitions.json", function (exhibitions) {
 
-			var groupedByYear = _.groupBy(exhibitions, function(exhibition) { return exhibition.year; });
 
-			_.forEachRight(groupedByYear, function (exhibitions, year) {
-				var outputHtml = exhibitionTemplateFunction({exhibitions: exhibitions, year: year});
-				$("#exhibition__container").append(outputHtml);
+			var categoryGroups = _.chain(exhibitions)
+							      .groupBy(function(x) { return x.category; })
+							      .map(function (value, key) { return {
+							      	category: key,
+							      	years: _.chain(value)
+							      			.groupBy(function (x) { return x.year; })
+							      			.map(function(value, key) {
+							      				return { year: key, exhibitions: value };
+							      			})
+							      			.sortBy(function (x) {
+							      				return -x.year;
+							      			})
+							      			.value()
+							      }})
+							      .value();
+			_.each(categoryGroups, function (category) {
+
+				var categoryOutputHtml = exhibitionTemplateFunction(category);
+
+				$("#exhibitions__container").append(categoryOutputHtml);
 			});
 		});
 
 		$.get("data/collections.json", function (collections) {
 			_.forEach(collections, function (collections) {
 				var outputHtml = collectionTemplateFunction(collections);
-				$("#collection__container").append(outputHtml);
+				$("#collections__container").append(outputHtml);
 			});
 		});
 
 		$.get("data/galleries.json", function (galleries) {
 			_.forEach(galleries, function (galleries) {
 				var outputHtml = galleryTemplateFunction(galleries);
-				$("#gallery__container").append(outputHtml);
+				$("#galleries__container").append(outputHtml);
 			});
 		});
 
 		$.get("data/publications.json", function (publications) {
 			_.forEach(publications, function (publications) {
 				var outputHtml = publicationTemplateFunction(publications);
-				$("#publication__container").append(outputHtml);
+				$("#publications__container").append(outputHtml);
 			});
 		});
 
 		$.get("data/teachings.json", function (teachings) {
 			_.forEach(teachings, function (teachings) {
 				var outputHtml = teachingTemplateFunction(teachings);
-				$("#teaching__container").append(outputHtml);
+				$("#teachings__container").append(outputHtml);
+			});
+		});
+
+		$.get("data/experiences.json", function (experiences) {
+			_.forEach(experiences, function (experiences) {
+				var outputHtml = experienceTemplateFunction(experiences);
+				$("#experiences__container").append(outputHtml);
 			});
 		});
 
 
-		$(".resume__navigation__item").click(function (event) {
-			$(".resume__navigation__item").removeClass("selected");
-			$(event.currentTarget).addClass("resume__navigation__item--selected");
+		$(".resume__nav__item").click(function (event) {
+			$(".resume__nav__item").removeClass("resume__nav__item--selected");
+			$(event.currentTarget).addClass("resume__nav__item--selected");
 		});
 
 		// var headerHeight = $("header").height();

@@ -23,9 +23,8 @@
 			<figure class="interior__item">
 				<img id="interior__item__image" src="" alt=""/>
 				<figcaption>
-					<h1 class="interior__item__title">
-						<span id="interior__item__text"></span>
-					</h1>
+				<h1 id="interior__item__title"></h1>
+				<h2 id="interior__item__data"></h2>
 				</figcaption>
 			</figure>
 		</div>
@@ -44,7 +43,8 @@
 			var item = portfolio__item[index];
 
 			//set the main data
-			$("#interior__item__text").text(item.title + ", " + item.medium + item.dimension + ", " + item.price);
+			$("#interior__item__title").text(item.title);
+			$("#interior__item__data").text(item.medium + item.dimension + ", " + item.price);
 			$("#interior__item__image")
 				.attr("src", item.largeImageUrl)
 				.attr("alt", item.alt);
