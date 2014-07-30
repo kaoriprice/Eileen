@@ -73,17 +73,23 @@
 	}
 
 }
-.nav{
+.nav_ul{
+	display:inline-block;
+}
+.global_nav{
 	position:absolute; bottom:$xs; right:0;
 	float:right;
 	@media (max-width: 640px){
+		text-align:center;
 		position:static;
+		float:none;
 		margin:0 auto;
 	}
 }
+
 .nav__item{	  
 	float:left;
-	//display:inline-block;
+	display:inline-block;
 	margin:0 $s;
 }
 .nav__icon{

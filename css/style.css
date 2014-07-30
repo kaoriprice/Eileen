@@ -174,27 +174,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 76, ../scss/_header.scss */
-.nav {
+.nav_ul {
+  display: inline-block;
+}
+
+/* line 79, ../scss/_header.scss */
+.global_nav {
   position: absolute;
   bottom: 10px;
   right: 0;
   float: right;
 }
 @media (max-width: 640px) {
-  /* line 76, ../scss/_header.scss */
-  .nav {
+  /* line 79, ../scss/_header.scss */
+  .global_nav {
+    text-align: center;
     position: static;
+    float: none;
     margin: 0 auto;
   }
 }
 
-/* line 84, ../scss/_header.scss */
+/* line 90, ../scss/_header.scss */
 .nav__item {
   float: left;
+  display: inline-block;
   margin: 0 13px;
 }
 
-/* line 89, ../scss/_header.scss */
+/* line 95, ../scss/_header.scss */
 .nav__icon, .nav__item--selected .nav__icon {
   width: 17px;
   display: block;
@@ -203,13 +211,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   filter: alpha(opacity=0);
 }
 @media (max-width: 900px) {
-  /* line 89, ../scss/_header.scss */
+  /* line 95, ../scss/_header.scss */
   .nav__icon, .nav__item--selected .nav__icon {
     display: none;
   }
 }
 
-/* line 98, ../scss/_header.scss */
+/* line 104, ../scss/_header.scss */
 .nav__name, .nav__item--selected .nav__name {
   display: inline-block;
   vertical-align: middle;
@@ -218,17 +226,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-size: 13px;
   font-weight: bold;
 }
-/* line 101, ../scss/_header.scss */
+/* line 107, ../scss/_header.scss */
 .nav__name:hover {
   color: #1a1a1a;
 }
 
-/* line 106, ../scss/_header.scss */
+/* line 112, ../scss/_header.scss */
 .nav__item--selected .nav__icon {
   opacity: 1;
   filter: alpha(opacity=1);
 }
-/* line 111, ../scss/_header.scss */
+/* line 117, ../scss/_header.scss */
 .nav__item--selected .nav__name {
   color: #f15a24;
 }
