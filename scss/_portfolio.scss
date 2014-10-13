@@ -1,6 +1,3 @@
-//@import "_setting";
-
-
 #container li {
 	opacity: 0;
 }
@@ -157,7 +154,7 @@ figcaption{
 	
 }
 @media (max-width: 320px){
-	.portfolio, .interior, .resume, #interior__container{
+	.portfolio, .resume, #interior__container{
 		padding:$xs;
 	}
 	#container{

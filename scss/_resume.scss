@@ -6,23 +6,23 @@ body{
 	padding:20px;
 	width:100%;
 	display:inline-block;
-	@media (max-width: 640px){
-		padding:$xs;
-	}
 }
 
 
 .resume__nav{
-	width:35%; display:inline-block; float:right;
+	display:inline-block; float:left;
 	border-right:1px solid $light-gray;
 	margin-top:$xs; 
 	background-color:rgba(255,255,255,0.9);
-	position:fixed; left:0;
+	position:fixed; left:$xs;
 	a{
 		color:$gray;
 		&:hover{
 			color:$black;
 		}
+	}
+	ul{
+		float:right;
 	}
 }
 .resume__nav__item{
@@ -36,16 +36,10 @@ body{
 		color:$red;
 	}
 }
-
-
 .resume__container{
 	display:inline-block;
 	font-size:$s; font-family:$sans-serif; line-height:1;
-	width:65%; float:right;
-	padding-left:$xs;
-	@media (max-width: 480px){
-		font-size:$xs;
-	}
+	float:left;
 }
 
 .resume__content__title{
@@ -53,18 +47,17 @@ body{
 	width:100%; 
 	color:$red; font-size:$m; font-weight:bold;	
 	border-bottom:1px solid $light-gray; 
+	padding-right:$xs;
+}
+.space{
 	margin-bottom:$xs;
 }
 .sub-category{
-	color:$black; font-size:$s; font-weight:bold; 
-	@media (max-width: 480px){
-		font-size:$xs;
-	}
-
+	color:$black; font-size:$s; font-weight:bold; margin-top:$xs;
 }
 
 .year{
-	font-size:$xs; 
+	font-weight:bold; 
 }
 .exhibition__year{
 	float: left;
@@ -79,11 +72,6 @@ body{
 	font-style:italic;
 }
 
-.resume__content{
-	display:inline-block; 
-	width:100%;
-	font-size:$s; color:$black;
-}
 .resume__content--link{
 	color:$black;
 	text-decoration: underline;
@@ -92,21 +80,17 @@ body{
 	}
 }
 
-
 @media (max-width: 1024px){
 	.resume__nav__item{
 	font-size:$s; 
 	} 
 }
-@media (max-width: 640px){
+@media (max-width: 895px){
 	.resume__nav__item{
 	display:none;
 	}
 	.resume__container{
 	margin-left:0; padding-left:0px;
 	width:100%;
-	}
-	.resume__content{
-	font-size:$s; line-height:1.5; 
 	}
 }

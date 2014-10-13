@@ -144,7 +144,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 56, ../scss/_header.scss */
 .logo__name a {
-  color: #1a1a1a;
+  color: #404040;
 }
 /* line 58, ../scss/_header.scss */
 .logo__name a:hover {
@@ -174,12 +174,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 76, ../scss/_header.scss */
-.nav_ul {
+.nav__ul {
   display: inline-block;
 }
 
 /* line 79, ../scss/_header.scss */
-.global_nav {
+.global__nav {
   position: absolute;
   bottom: 10px;
   right: 0;
@@ -187,7 +187,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 @media (max-width: 640px) {
   /* line 79, ../scss/_header.scss */
-  .global_nav {
+  .global__nav {
     text-align: center;
     position: static;
     float: none;
@@ -228,7 +228,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 107, ../scss/_header.scss */
 .nav__name:hover {
-  color: #1a1a1a;
+  color: #404040;
 }
 
 /* line 112, ../scss/_header.scss */
@@ -241,17 +241,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #f15a24;
 }
 
-/* line 4, ../scss/_portfolio.scss */
+/* line 1, ../scss/_index.scss */
+.hero__image {
+  display: block;
+  padding: 20px 0 10px 0;
+  margin: 0 auto;
+}
+
+/* line 1, ../scss/_portfolio.scss */
 #container li {
   opacity: 0;
 }
 
-/* line 8, ../scss/_portfolio.scss */
+/* line 5, ../scss/_portfolio.scss */
 #container li.shown {
   opacity: 1;
 }
 
-/* line 12, ../scss/_portfolio.scss */
+/* line 9, ../scss/_portfolio.scss */
 #container li.animate {
   -webkit-animation: fadeIn 0.65s ease forwards;
   -moz-animation: fadeIn 0.65s ease forwards;
@@ -259,47 +266,47 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-webkit-keyframes fadeIn {
-  /* line 20, ../scss/_portfolio.scss */
+  /* line 17, ../scss/_portfolio.scss */
   to {
     opacity: 1;
   }
 }
 
 @-moz-keyframes fadeIn {
-  /* line 24, ../scss/_portfolio.scss */
+  /* line 21, ../scss/_portfolio.scss */
   to {
     opacity: 1;
   }
 }
 
 @keyframes fadeIn {
-  /* line 28, ../scss/_portfolio.scss */
+  /* line 25, ../scss/_portfolio.scss */
   to {
     opacity: 1;
   }
 }
 
-/* line 30, ../scss/_portfolio.scss */
+/* line 27, ../scss/_portfolio.scss */
 html {
   background-color: white;
 }
 
-/* line 33, ../scss/_portfolio.scss */
+/* line 30, ../scss/_portfolio.scss */
 body {
   background-color: white;
 }
 
-/* line 36, ../scss/_portfolio.scss */
+/* line 33, ../scss/_portfolio.scss */
 a {
   color: initial;
 }
 
-/* line 39, ../scss/_portfolio.scss */
+/* line 36, ../scss/_portfolio.scss */
 figcaption {
   position: relative;
 }
 
-/* line 42, ../scss/_portfolio.scss */
+/* line 39, ../scss/_portfolio.scss */
 .up {
   position: fixed;
   bottom: 70px;
@@ -314,42 +321,42 @@ figcaption {
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 48, ../scss/_portfolio.scss */
+/* line 45, ../scss/_portfolio.scss */
 .up:hover {
   background-color: gray;
   background-image: url("../icon/up_white.png");
 }
 
-/* line 53, ../scss/_portfolio.scss */
+/* line 50, ../scss/_portfolio.scss */
 .portfolio__item {
   float: left;
   background-clip: content-box;
 }
-/* line 56, ../scss/_portfolio.scss */
+/* line 53, ../scss/_portfolio.scss */
 .portfolio__item:hover {
   background-color: #f2f2f2;
 }
-/* line 58, ../scss/_portfolio.scss */
+/* line 55, ../scss/_portfolio.scss */
 .portfolio__item:hover figcaption {
   border-bottom: #cccccc 1px solid;
 }
-/* line 61, ../scss/_portfolio.scss */
+/* line 58, ../scss/_portfolio.scss */
 .portfolio__item:hover .portfolio__item__zoom {
   display: initial;
 }
-/* line 64, ../scss/_portfolio.scss */
+/* line 61, ../scss/_portfolio.scss */
 .portfolio__item:hover .portfolio__item__title, .portfolio__item:hover .portfolio__item__data, .portfolio__item:hover .portfolio__item__price {
-  color: #1a1a1a;
+  color: #404040;
 }
 
-/* line 69, ../scss/_portfolio.scss */
+/* line 66, ../scss/_portfolio.scss */
 .portfolio__item__image {
   width: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* line 74, ../scss/_portfolio.scss */
+/* line 71, ../scss/_portfolio.scss */
 .portfolio__item__zoom {
   position: absolute;
   top: -30px;
@@ -357,7 +364,7 @@ figcaption {
   display: none;
 }
 
-/* line 79, ../scss/_portfolio.scss */
+/* line 76, ../scss/_portfolio.scss */
 .portfolio__item__title {
   padding: 10px;
   color: #858585;
@@ -365,7 +372,7 @@ figcaption {
   text-transform: uppercase;
 }
 
-/* line 83, ../scss/_portfolio.scss */
+/* line 80, ../scss/_portfolio.scss */
 .portfolio__item__data {
   padding: 0 10px;
   color: #858585;
@@ -373,12 +380,12 @@ figcaption {
   font-size: 17px;
   font-variant: small-caps;
 }
-/* line 86, ../scss/_portfolio.scss */
+/* line 83, ../scss/_portfolio.scss */
 .portfolio__item__data span {
   font-size: 13px;
 }
 
-/* line 91, ../scss/_portfolio.scss */
+/* line 88, ../scss/_portfolio.scss */
 .portfolio__item__price {
   padding: 10px;
   color: #858585;
@@ -389,80 +396,80 @@ figcaption {
 }
 
 @media (min-width: 1680px) {
-  /* line 97, ../scss/_portfolio.scss */
+  /* line 94, ../scss/_portfolio.scss */
   .portfolio__item__title {
     font-size: 23px;
     padding: 10px;
   }
 
-  /* line 101, ../scss/_portfolio.scss */
+  /* line 98, ../scss/_portfolio.scss */
   .portfolio__item__data {
     font-size: 23px;
     padding: 0 10px;
     margin-top: -10px;
   }
 
-  /* line 105, ../scss/_portfolio.scss */
+  /* line 102, ../scss/_portfolio.scss */
   .portfolio__item__price {
     font-size: 17px;
     padding: 10px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 112, ../scss/_portfolio.scss */
+  /* line 109, ../scss/_portfolio.scss */
   .portfolio, .interior, .resume, #interior__container {
     padding: 10px;
   }
 
-  /* line 116, ../scss/_portfolio.scss */
+  /* line 113, ../scss/_portfolio.scss */
   #container .portfolio__item {
     padding: 10px;
     width: calc(100%/4);
   }
 }
 @media (max-width: 1024px) {
-  /* line 123, ../scss/_portfolio.scss */
+  /* line 120, ../scss/_portfolio.scss */
   .portfolio, .interior, .resume, #interior__container {
     padding: 10px;
   }
 
-  /* line 127, ../scss/_portfolio.scss */
+  /* line 124, ../scss/_portfolio.scss */
   #container .portfolio__item {
     padding: 10px;
     width: calc(100%/3);
   }
 }
 @media (max-width: 768px) {
-  /* line 134, ../scss/_portfolio.scss */
+  /* line 131, ../scss/_portfolio.scss */
   .portfolio, .interior, .resume, #interior__container {
     padding: 10px;
   }
 
-  /* line 138, ../scss/_portfolio.scss */
+  /* line 135, ../scss/_portfolio.scss */
   #container .portfolio__item {
     padding: 10px;
     width: calc(100%/2);
   }
 }
 @media (max-width: 640px) {
-  /* line 148, ../scss/_portfolio.scss */
+  /* line 145, ../scss/_portfolio.scss */
   .portfolio, .interior, .resume, #interior__container {
     padding: 10px;
   }
 
-  /* line 152, ../scss/_portfolio.scss */
+  /* line 149, ../scss/_portfolio.scss */
   #container .portfolio__item {
     padding: 10px;
     width: calc(100%/1);
   }
 }
 @media (max-width: 320px) {
-  /* line 160, ../scss/_portfolio.scss */
-  .portfolio, .interior, .resume, #interior__container {
+  /* line 157, ../scss/_portfolio.scss */
+  .portfolio, .resume, #interior__container {
     padding: 10px;
   }
 
-  /* line 164, ../scss/_portfolio.scss */
+  /* line 161, ../scss/_portfolio.scss */
   #container .portfolio__item {
     padding: 10px;
     width: calc(100%/1);
@@ -470,14 +477,14 @@ figcaption {
 }
 /* line 1, ../scss/_interior.scss */
 .interior {
-  background-color: #1a1a1a;
+  background-color: #404040;
 }
 /* line 3, ../scss/_interior.scss */
 .interior::before {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: #1a1a1a;
+  background-color: #404040;
   position: absolute;
   top: 0;
   left: 0;
@@ -517,14 +524,14 @@ figcaption {
   padding: 4px;
   width: 40px;
   height: 40px;
-  background-color: rgba(26, 26, 26, 0.8);
+  background-color: rgba(64, 64, 64, 0.8);
   background-image: url("../icon/back_gray.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 /* line 31, ../scss/_interior.scss */
 .back:hover {
-  background-color: #1a1a1a;
+  background-color: #404040;
   background-image: url("../icon/back_gray.png");
 }
 
@@ -533,7 +540,7 @@ figcaption {
   text-align: center;
   width: 41px;
   height: 82px;
-  background-color: rgba(26, 26, 26, 0.8);
+  background-color: rgba(64, 64, 64, 0.8);
   position: fixed;
   top: calc(50% - 40px);
   right: 20px;
@@ -543,7 +550,7 @@ figcaption {
 }
 /* line 42, ../scss/_interior.scss */
 #next:hover, #previous:hover {
-  background-color: #1a1a1a;
+  background-color: #404040;
   background-image: url("../icon/next_gray.png");
 }
 
@@ -599,31 +606,28 @@ body {
   width: 100%;
   display: inline-block;
 }
-@media (max-width: 640px) {
-  /* line 5, ../scss/_resume.scss */
-  .resume {
-    padding: 10px;
-  }
-}
 
-/* line 15, ../scss/_resume.scss */
+/* line 12, ../scss/_resume.scss */
 .resume__nav {
-  width: 35%;
   display: inline-block;
-  float: right;
+  float: left;
   border-right: 1px solid #cccccc;
   margin-top: 10px;
   background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
-  left: 0;
+  left: 10px;
 }
-/* line 21, ../scss/_resume.scss */
+/* line 18, ../scss/_resume.scss */
 .resume__nav a {
   color: #858585;
 }
-/* line 23, ../scss/_resume.scss */
+/* line 20, ../scss/_resume.scss */
 .resume__nav a:hover {
-  color: #1a1a1a;
+  color: #404040;
+}
+/* line 24, ../scss/_resume.scss */
+.resume__nav ul {
+  float: right;
 }
 
 /* line 28, ../scss/_resume.scss */
@@ -642,24 +646,16 @@ body {
   color: #f15a24;
 }
 
-/* line 41, ../scss/_resume.scss */
+/* line 39, ../scss/_resume.scss */
 .resume__container {
   display: inline-block;
   font-size: 13px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   line-height: 1;
-  width: 65%;
-  float: right;
-  padding-left: 10px;
-}
-@media (max-width: 480px) {
-  /* line 41, ../scss/_resume.scss */
-  .resume__container {
-    font-size: 10px;
-  }
+  float: left;
 }
 
-/* line 51, ../scss/_resume.scss */
+/* line 45, ../scss/_resume.scss */
 .resume__content__title {
   display: inline-block;
   width: 100%;
@@ -667,97 +663,83 @@ body {
   font-size: 17px;
   font-weight: bold;
   border-bottom: 1px solid #cccccc;
+  padding-right: 10px;
+}
+
+/* line 52, ../scss/_resume.scss */
+.space {
   margin-bottom: 10px;
 }
 
-/* line 58, ../scss/_resume.scss */
+/* line 55, ../scss/_resume.scss */
 .sub-category {
-  color: #1a1a1a;
+  color: #404040;
   font-size: 13px;
   font-weight: bold;
-}
-@media (max-width: 480px) {
-  /* line 58, ../scss/_resume.scss */
-  .sub-category {
-    font-size: 10px;
-  }
+  margin-top: 10px;
 }
 
-/* line 66, ../scss/_resume.scss */
+/* line 59, ../scss/_resume.scss */
 .year {
-  font-size: 10px;
+  font-weight: bold;
 }
 
-/* line 69, ../scss/_resume.scss */
+/* line 62, ../scss/_resume.scss */
 .exhibition__year {
   float: left;
 }
 
-/* line 72, ../scss/_resume.scss */
+/* line 65, ../scss/_resume.scss */
 .exhibition__data {
   float: left;
   width: auto;
 }
 
-/* line 75, ../scss/_resume.scss */
+/* line 68, ../scss/_resume.scss */
 .private__collection {
   font-style: italic;
 }
 
-/* line 78, ../scss/_resume.scss */
+/* line 71, ../scss/_resume.scss */
 .italic {
   font-style: italic;
 }
 
-/* line 82, ../scss/_resume.scss */
-.resume__content {
-  display: inline-block;
-  width: 100%;
-  font-size: 13px;
-  color: #1a1a1a;
-}
-
-/* line 87, ../scss/_resume.scss */
+/* line 75, ../scss/_resume.scss */
 .resume__content--link {
-  color: #1a1a1a;
+  color: #404040;
   text-decoration: underline;
 }
-/* line 90, ../scss/_resume.scss */
+/* line 78, ../scss/_resume.scss */
 .resume__content--link:hover {
   color: #f15a24;
 }
 
 @media (max-width: 1024px) {
-  /* line 97, ../scss/_resume.scss */
+  /* line 84, ../scss/_resume.scss */
   .resume__nav__item {
     font-size: 13px;
   }
 }
-@media (max-width: 640px) {
-  /* line 102, ../scss/_resume.scss */
+@media (max-width: 895px) {
+  /* line 89, ../scss/_resume.scss */
   .resume__nav__item {
     display: none;
   }
 
-  /* line 105, ../scss/_resume.scss */
+  /* line 92, ../scss/_resume.scss */
   .resume__container {
     margin-left: 0;
     padding-left: 0px;
     width: 100%;
   }
-
-  /* line 109, ../scss/_resume.scss */
-  .resume__content {
-    font-size: 13px;
-    line-height: 1.5;
-  }
 }
-/* line 8, ../scss/style.scss */
+/* line 9, ../scss/style.scss */
 .clear {
   clear: both;
 }
 
-/* line 13, ../scss/style.scss */
+/* line 14, ../scss/style.scss */
 a {
   text-decoration: none;
 }

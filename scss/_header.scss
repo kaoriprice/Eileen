@@ -73,10 +73,10 @@
 	}
 
 }
-.nav_ul{
+.nav__ul{
 	display:inline-block;
 }
-.global_nav{
+.global__nav{
 	position:absolute; bottom:$xs; right:0;
 	float:right;
 	@media (max-width: 640px){

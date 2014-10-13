@@ -16,7 +16,7 @@
 
 <body>
 
-	<a class="back" href="index.html"></a>
+	<a class="back" href="portfolio.html"></a>
 
 	<main class="interior">
 		<div id="interior__container">
@@ -45,34 +45,43 @@
 			//set the main data
 			$("#interior__item__title").text(item.title);
 			$("#interior__item__data").text(item.medium + item.dimension + ", " + item.price);
-			$("#interior__item__image")
-				.attr("src", item.largeImageUrl)
-				.attr("alt", item.alt);
+			$("#interior__item__image").attr("alt", item.alt);
 
+			var image = document.createElement('img');
+			image.src = item.largeImageUrl;
+			image.onload = function () {
+
+				$("#interior__item__image").attr("src", image.src);
+
+				//calculate the desired size of the image
+				var windowHeight = $(window).height();
+				var windowWidth = $(window).width();
+				var figcaptionHeight = $("figcaption").height();	
+
+				var interiorHeight = windowHeight - figcaptionHeight - 40;	
+
+				var imageHeight = image.height;
+				var imageWidth = image.width;
+
+				var ratioHeight = interiorHeight/imageHeight;
+				var ratioWidth = windowWidth/imageWidth;
+
+				var scale = Math.min(ratioHeight, ratioWidth);
+
+				var desiredHeight = imageHeight * scale;
+				var desiredWidth = imageWidth * scale;	
+
+
+				$("#interior__item__image").css ("height", desiredHeight +"px");
+				$("#interior__item__image").css ("width", desiredWidth + "px");
+			};
 
 			//set up left and right buttons
 			$("#next").attr("href", "interior.html?" + (index+1));
 			$("#previous").attr("href", "interior.html?" + (index-1));
 
-			//calculate the desired size of the image
-			var wy = $(window).height();
-			var wx = $(window).height();
-
-			var iy = $("#interior__item__image").height();
-			var ix = $("#interior__item__image").width();
-
-			var ratio = iy/ix;
-
-			var desiredIx = wx;
-			var desiredIy = wx * ratio;			
-
-			$("#interior__item__image").height(desiredIy).width(desiredIx);
-
 		});
-	});
-
-
-		
+	});		
 	</script>
 </body>
 

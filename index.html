@@ -21,10 +21,10 @@
 			<h2 class="logo__tag">Visual Artist</h2>
 		</div>
 
-		<nav class="global_nav">
-			<ul class="nav_ul">
-				<li class="nav__item nav__item--selected">
-					<a href="index.html">
+		<nav class="global__nav">
+			<ul class="nav__ul">
+				<li class="nav__item">
+					<a href="portfolio.html">
 						<img class="nav__icon" src="icon/nav/portfolio_selected.svg"/>
 						<h3 class="nav__name">Portfolio</h3>
 					</a>
@@ -36,15 +36,9 @@
 					</a>
 				</li>
 				<li class="nav__item">
-					<a href="statement.html">
-						<img class="nav__icon" src="icon/nav/statement.svg"/>
-						<h3 class="nav__name">Statement</h3>
-					</a>
-				</li>
-				<li class="nav__item">
-					<a href="news.html">
+					<a href="about.html">
 						<img class="nav__icon" src="icon/nav/news.svg"/>
-						<h3 class="nav__name">News</h3>
+						<h3 class="nav__name">About</h3>
 					</a>
 				</li>
 				<li class="nav__item">
@@ -57,38 +51,14 @@
 		</nav>
 		<div class="clear"></div>
 	</header>
-
 	<main class="portfolio">
-		<a class="up" href="#top"></a>
-	
-		<ul id="container"></ul>
+		<a  href="portfolio.html"><img class="hero__image" src="img/original/east_of_the_sun_west_of_the_moon.jpg"/></a>
 	</main>
-
-	<script id="portfolioItemTemplate" type="text/x-handlebars-template">
-        <li class="portfolio__item">
-            <figure>
-	            <a name="{{id}}" href="interior.html?{{index}}">
-	                <img class="portfolio__item__image" src="{{imageUrl}}" alt="{{alt}}" />
-	                <figcaption>
-						<img class="portfolio__item__zoom" src="icon/zoom.png" />	
-						<h1 class="portfolio__item__title">{{title}}</h1>
-						<p class="portfolio__item__data">{{medium}}<span>{{dimension}}</span></p>
-						<p class="portfolio__item__price">{{price}}</p>
-					</figcaption>
-		     	</a>
-     	   </figure>
-        </li>           
-    </script>
 	<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
-	<script src="lib/masonry.pkgd.min.js"></script>
-	<script src="lib/handlebars-v1.3.0.js"></script>
-	<script src="js/modernizr-latest.js"></script>
 	<script src="js/classie.js"></script>
-	<script src="js/imagesloaded.js"></script>
-	<script src="js/AnimOnScroll.js"></script>
-	<script src="js/eileen.js"></script>
 	<script src="js/headerOffset.js"></script>
-	<script src="js/headerWidth.js"></script>
+	<script src="js/index.js"></script>
+
 </body>
 
 </html>
