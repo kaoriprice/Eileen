@@ -1,5 +1,109 @@
 [
 	{
+		"category":"Solo or Two-Person Exhibitions",
+		"year":"2011",
+		"type":"Solo, ",
+		"title":"",
+		"details":"Waterstone Gallery,",
+		"location": "Portland, Oregon"
+	},
+	{
+		"category":"Solo or Two-Person Exhibitions",
+		"year":"2009",
+		"type":"Solo, ",
+		"title":"",
+		"details":"Waterstone Gallery,",
+		"location": "Portland, Oregon"
+	},
+	{
+		"category":"Solo or Two-Person Exhibitions",
+		"year":"2007",
+		"type":"Solo, ",
+		"title":"",
+		"details":"Waterstone Gallery,",
+		"location": "Portland, Oregon"
+	},
+	{
+		"category":"Solo or Two-Person Exhibitions",
+		"year":"2007",
+		"type":"Solo, ",
+		"title":"",
+		"details":"George Fox University,",
+		"location": "Newberg, Oregon"
+	},
+	{
+		"category":"Solo or Two-Person Exhibitions",
+		"year":"2004",
+		"type":"Solo, ",
+		"title":"",
+		"details":"Waterstone Gallery,",
+		"location": "Portland, Oregon"
+	},
+	{
+		"category":"Solo or Two-Person Exhibitions",
+		"year":"2002",
+		"type":"Solo, ",
+		"title":"",
+		"details":"Waterstone Gallery,",
+		"location": "Portland, Oregon"
+	},
+	{
+		"category":"Solo or Two-Person Exhibitions",
+		"year":"2000",
+		"type":"Solo, ",
+		"title":"",
+		"details":"Waterstone Gallery,",
+		"location": "Portland, Oregon"
+	},
+	{
+		"category":"Solo or Two-Person Exhibitions",
+		"year":"2000",
+		"type":"Two-Person, ",
+		"title":"",
+		"details":"Featured Artist Gallery, Salem Art Assoc.,",
+		"location": "Salem, Oregon"
+	},
+	{
+		"category":"Solo or Two-Person Exhibitions",
+		"year":"1997",
+		"type":"Two-Person, ",
+		"title":"",
+		"details":"Waterstone Gallery,",
+		"location": "Portland, Oregon"
+	},
+	{
+		"category":"Solo or Two-Person Exhibitions",
+		"year":"1994",
+		"type":"Two-Person, ",
+		"title":"",
+		"details":"Artisans’ Co-operative Gallery,",
+		"location": "Portland, Oregon"
+	},
+	{
+		"category":"Solo or Two-Person Exhibitions",
+		"year":"1993",
+		"type":"Solo, ",
+		"title":"",
+		"details":"Chemeketa Community College,",
+		"location": "Salem, Oregon"
+	},
+	{	
+		"category":"Solo or Two-Person Exhibitions",
+		"year":"1992",
+		"type":"Solo, ",
+		"title":"",
+		"details":"Art Decor Gallery,",
+		"location": "Salem, Oregon"
+	},
+	{	
+		"category":"Solo or Two-Person Exhibitions",
+		"year":"1991",
+		"type":"Solo, ",
+		"title":"",
+		"details":"A.N.Bush Corner Gallery, Salem Art Association,",
+		"location": "Salem, Oregon"
+	},
+	{
 		"category":"Selected Group Exhibitions",
 		"year":"2014",
 		"type":"Invitational Four-Person, ",
@@ -574,110 +678,6 @@
 		"title":"",
 		"details":"Juried Art Exhibition,",
 		"location": "Sunriver, Oregon"
-	},
-	{
-		"category":"Solo or Two-Person Exhibitions",
-		"year":"2011",
-		"type":"Solo, ",
-		"title":"",
-		"details":"Waterstone Gallery,",
-		"location": "Portland, Oregon"
-	},
-	{
-		"category":"Solo or Two-Person Exhibitions",
-		"year":"2009",
-		"type":"Solo, ",
-		"title":"",
-		"details":"Waterstone Gallery,",
-		"location": "Portland, Oregon"
-	},
-	{
-		"category":"Solo or Two-Person Exhibitions",
-		"year":"2007",
-		"type":"Solo, ",
-		"title":"",
-		"details":"Waterstone Gallery,",
-		"location": "Portland, Oregon"
-	},
-	{
-		"category":"Solo or Two-Person Exhibitions",
-		"year":"2007",
-		"type":"Solo, ",
-		"title":"",
-		"details":"George Fox University,",
-		"location": "Newberg, Oregon"
-	},
-	{
-		"category":"Solo or Two-Person Exhibitions",
-		"year":"2004",
-		"type":"Solo, ",
-		"title":"",
-		"details":"Waterstone Gallery,",
-		"location": "Portland, Oregon"
-	},
-	{
-		"category":"Solo or Two-Person Exhibitions",
-		"year":"2002",
-		"type":"Solo, ",
-		"title":"",
-		"details":"Waterstone Gallery,",
-		"location": "Portland, Oregon"
-	},
-	{
-		"category":"Solo or Two-Person Exhibitions",
-		"year":"2000",
-		"type":"Solo, ",
-		"title":"",
-		"details":"Waterstone Gallery,",
-		"location": "Portland, Oregon"
-	},
-	{
-		"category":"Solo or Two-Person Exhibitions",
-		"year":"2000",
-		"type":"Two-Person, ",
-		"title":"",
-		"details":"Featured Artist Gallery, Salem Art Assoc.,",
-		"location": "Salem, Oregon"
-	},
-	{
-		"category":"Solo or Two-Person Exhibitions",
-		"year":"1997",
-		"type":"Two-Person, ",
-		"title":"",
-		"details":"Waterstone Gallery,",
-		"location": "Portland, Oregon"
-	},
-	{
-		"category":"Solo or Two-Person Exhibitions",
-		"year":"1994",
-		"type":"Two-Person, ",
-		"title":"",
-		"details":"Artisans’ Co-operative Gallery,",
-		"location": "Portland, Oregon"
-	},
-	{
-		"category":"Solo or Two-Person Exhibitions",
-		"year":"1993",
-		"type":"Solo, ",
-		"title":"",
-		"details":"Chemeketa Community College,",
-		"location": "Salem, Oregon"
-	},
-	{	
-		"category":"Solo or Two-Person Exhibitions",
-		"year":"1992",
-		"type":"Solo, ",
-		"title":"",
-		"details":"Art Decor Gallery,",
-		"location": "Salem, Oregon"
-	},
-	{	
-		"category":"Solo or Two-Person Exhibitions",
-		"year":"1991",
-		"type":"Solo, ",
-		"title":"",
-		"details":"A.N.Bush Corner Gallery, Salem Art Association,",
-		"location": "Salem, Oregon"
 	},
 	{	
 		"category":"Exhibition Awards",
