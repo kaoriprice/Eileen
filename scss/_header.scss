@@ -1,6 +1,6 @@
 .global__header{
 	border-bottom: 1px $light-gray solid;
-	background-color:$white;
+	background-color:rgba($white, 0.95);
 	position:fixed; left:0px; top:0;
 	z-index:999;
 	padding-bottom:$xs;
@@ -92,37 +92,50 @@
 	float:left;
 	display:inline-block;
 	margin:0 $s;
+	.nav__icon{
+		width: $m; 
+		display:block; margin:0 auto;
+		opacity:1;
+		filter:alpha(opacity=1);
+		@media (max-width: 640px){
+			display:none;
+		}
+	}
+	.nav__name{
+		display:inline-block; vertical-align:middle;
+		color:$black; font-family:$sans-serif; font-size: $s; font-weight:600; 
+	}
+	&:hover{
+		.nav__icon{
+		opacity:0.6;
+		filter:alpha(opacity=0.6);
+		}
+		.nav__name{
+			color: $gray;
+		}
+	}
 
 }
-.nav__icon{
-	width: $m;
-	display:block; margin:0 auto;
-	opacity:1;
-	filter:alpha(opacity=1);
-	@media (max-width: 900px){
-		display:none;
-	}
-}
-.nav__name{
-	display:inline-block; vertical-align:middle;
-	color:$black; font-family:$sans-serif; font-size: $s; font-weight:600; 
-	&:hover{
-		color: $gray;
-	}
-}
-.nav__item--selected{	
+
+.nav__item--selected{
 	.nav__icon{
 	@extend .nav__icon;
 	opacity:1;
 	filter:alpha(opacity=1);
 	}
 	.nav__name{
-	@extend .nav__name;
-	color:$red;
-		&:hover{
+		@extend .nav__name;
+		color:$red;
+	}
+	&:hover{
+		.nav__icon{
+		opacity:0.6;
+		filter:alpha(opacity=0.6);
+		}
+		.nav__name{
 			color: $light-red;
 		}
-	}
+	}	
 }
 
 

@@ -75,7 +75,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 1, ../scss/_header.scss */
 .global__header {
   border-bottom: 1px #ccc solid;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.95);
   position: fixed;
   left: 0px;
   top: 0;
@@ -206,24 +206,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: inline-block;
   margin: 0 13px;
 }
-
-/* line 97, ../scss/_header.scss */
-.nav__icon, .nav__item--selected .nav__icon {
+/* line 95, ../scss/_header.scss */
+.nav__item .nav__icon {
   width: 17px;
   display: block;
   margin: 0 auto;
   opacity: 1;
   filter: alpha(opacity=1);
 }
-@media (max-width: 900px) {
-  /* line 97, ../scss/_header.scss */
-  .nav__icon, .nav__item--selected .nav__icon {
+@media (max-width: 640px) {
+  /* line 95, ../scss/_header.scss */
+  .nav__item .nav__icon {
     display: none;
   }
 }
-
-/* line 106, ../scss/_header.scss */
-.nav__name, .nav__item--selected .nav__name {
+/* line 104, ../scss/_header.scss */
+.nav__item .nav__name {
   display: inline-block;
   vertical-align: middle;
   color: #404040;
@@ -232,21 +230,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 600;
 }
 /* line 109, ../scss/_header.scss */
-.nav__name:hover {
+.nav__item:hover .nav__icon {
+  opacity: 0.6;
+  filter: alpha(opacity=0.6);
+}
+/* line 113, ../scss/_header.scss */
+.nav__item:hover .nav__name {
   color: #858585;
 }
 
-/* line 114, ../scss/_header.scss */
+/* line 121, ../scss/_header.scss */
 .nav__item--selected .nav__icon {
   opacity: 1;
   filter: alpha(opacity=1);
 }
-/* line 119, ../scss/_header.scss */
+/* line 126, ../scss/_header.scss */
 .nav__item--selected .nav__name {
   color: #f15a24;
 }
-/* line 122, ../scss/_header.scss */
-.nav__item--selected .nav__name:hover {
+/* line 131, ../scss/_header.scss */
+.nav__item--selected:hover .nav__icon {
+  opacity: 0.6;
+  filter: alpha(opacity=0.6);
+}
+/* line 135, ../scss/_header.scss */
+.nav__item--selected:hover .nav__name {
   color: #f79c7c;
 }
 
@@ -885,42 +893,42 @@ body {
   padding-top: 10px;
 }
 /* line 76, ../scss/_about.scss */
+.wrapper:nth-child(2) figcaption {
+  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 10px;
+  font-weight: 100;
+  padding: 2.5px;
+  padding-bottom: 10px;
+}
+/* line 80, ../scss/_about.scss */
 .wrapper:nth-child(2) section:nth-child(2) figure {
   float: right;
   padding-left: 20px;
 }
 @media (max-width: 480px) {
-  /* line 76, ../scss/_about.scss */
+  /* line 80, ../scss/_about.scss */
   .wrapper:nth-child(2) section:nth-child(2) figure {
     padding: 0;
   }
 }
-/* line 82, ../scss/_about.scss */
+/* line 86, ../scss/_about.scss */
 .wrapper:nth-child(2) section:nth-child(2) figure figcaption {
-  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 10px;
-  font-weight: 100;
   text-align: right;
-  padding: 2.5px;
 }
-/* line 87, ../scss/_about.scss */
+/* line 91, ../scss/_about.scss */
 .wrapper:nth-child(2) section:nth-child(3) figure {
   float: left;
   padding-right: 20px;
 }
 @media (max-width: 480px) {
-  /* line 87, ../scss/_about.scss */
+  /* line 91, ../scss/_about.scss */
   .wrapper:nth-child(2) section:nth-child(3) figure {
     padding: 0;
   }
 }
-/* line 93, ../scss/_about.scss */
+/* line 97, ../scss/_about.scss */
 .wrapper:nth-child(2) section:nth-child(3) figure figcaption {
-  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 10px;
-  font-weight: 100;
   text-align: left;
-  padding: 2.5px;
 }
 
 /* line 12, ../scss/style.scss */
