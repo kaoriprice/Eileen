@@ -75,7 +75,7 @@
 			<h2 class="sub-category no-margin-top">Public and Corporate Collections</h2>
 			<ul class="collections" id="collections__container"></ul>
 			<h2 class="sub-category">Private Collections</h2>
-			<ul class="private__collection">Furnished upon request</ul>
+			<ul class="resume--item">Furnished upon request</ul>
 
 
 			<!-- Gallery Representation -->
@@ -108,41 +108,54 @@
 	<!-- Exhibitions -->
 	<script id="exhibitionTemplate" type="text/x-handlebars-template">
 			<h2 class="sub-category">{{category}}</h2>
-		        {{#each years}}
-		        	<h3 class="exhibition__year"><span class="year">{{year}}&nbsp;</span></h3>
-			        <ul class="exhibition__data">
-			        	{{#each exhibitions}}
-						<li>{{type}}<span class="italic">{{title}}</span>{{details}} {{location}} <span class="italic">{{rank}}</span></li> 
-						{{/each}}
+				<div class="resume--item">
+			        {{#each years}}
+			        	<h3 class="exhibition__year"><span class="year">{{year}}&nbsp;</span></h3>
+				        <ul class="exhibition__data">
+				        	{{#each exhibitions}}
+							<li><span class="exhibition--type">{{type}}</span><span class="exhibition--title">{{title}}</span><span class="exhibition--details">{{details}}</span><span class="exhibition--state">{{location}}</span> <span class="exhibition--rank">{{rank}}</span>
+							</li> 
+							{{/each}}
+						</ul>
+						<div style="clear: both;"></div>
 					</ul>
-					<div style="clear: both;"></div>
-				</ul>
-		        {{/each}}
+			        {{/each}}
+		        </div>
     </script>
 
 	<!-- Collections -->
     <script id="collectionTemplate" type="text/x-handlebars-template">
-			<li class="resume__content--list">{{location}}</li>
+    	<div class="resume--item">
+			<li>{{location}}</li>
+		</div>
     </script>
 
 	<!-- Galleries -->
     <script id="galleryTemplate" type="text/x-handlebars-template">
-			<li class="resume__content--list"><span class="year">{{duration}}</span> <a class="resume__content--link" href="{{link}}">{{name}}</a>, {{location}}</li>
+    	<div class="resume--item">
+			<li><span class="year">{{duration}}</span> <a class="resume__content--link" href="{{link}}">{{name}}</a> <span class="exhibition--state"> {{location}}</span></li>
+		</div>
     </script>
 
     <!-- Publications -->
     <script id="publicationTemplate" type="text/x-handlebars-template">
-			<p class="resume__content--publications--content"><span class="year">{{year}}</span> <a class="resume__content--link" href="{{link}}">{{content}}</a>, {{publisher}}</p>
+    	<div class="resume--item">
+			<p><span class="year">{{year}}</span> <a class="resume__content--link" href="{{link}}">{{content}}</a> <span class="publisher">{{publisher}}</span></p>
+		</div>
     </script>
 
 	<!-- Teaching -->
     <script id="teachingTemplate" type="text/x-handlebars-template">
-			<p class="resume__content--teaching--content"><span class="year">{{year}}</span> {{name}}, {{type}}, {{location}}</p>
+    	<div class="resume--item">
+			<p class="resume__content--teaching--content"><span class="year">{{year}}</span> {{name}}, {{type}}<span class="exhibition--state"> {{location}}</span></p>
+		</div>
     </script>
 	
 	<!-- Experience -->
     <script id="experienceTemplate" type="text/x-handlebars-template">
-			<p class="resume__content--experiences--content"><span class="year">{{year}}</span> {{position}}{{title}}{{details}}{{location}}</p>
+    	<div class="resume--item">
+			<p class="resume__content--experiences--content"><span class="year">{{year}}</span> {{position}} {{title}}{{details}}<span class="exhibition--state"> {{location}}</span></p>
+   		</div>
     </script>
 
 	<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>

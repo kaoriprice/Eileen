@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 /* line 5, ../../../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -63,7 +65,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 1, ../scss/_setting.scss */
+/* line 2, ../scss/_setting.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -87,7 +89,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   content: "";
   background-color: #fff;
   width: 20px;
-  height: 20px;
+  height: 100%;
   position: absolute;
   top: 0;
   left: -20px;
@@ -97,7 +99,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   content: "";
   background-color: #fff;
   width: 20px;
-  height: 20px;
+  height: 100%;
   position: absolute;
   top: 0;
   right: -20px;
@@ -137,10 +139,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 53, ../scss/_header.scss */
 .logo__name {
-  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-family: "Didot", "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 41px;
   font-weight: bold;
-  padding: 10px 0 10px 0;
+  padding: 10px 0 0 0;
 }
 /* line 56, ../scss/_header.scss */
 .logo__name a {
@@ -162,8 +164,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .logo__tag {
   color: #858585;
   font-size: 17px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  letter-spacing: 2.3px;
+  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-style: italic;
   padding-left: 2.3px;
 }
 @media (max-width: 900px) {
@@ -181,7 +185,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 79, ../scss/_header.scss */
 .global__nav {
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   right: 0;
   float: right;
 }
@@ -192,53 +196,58 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     position: static;
     float: none;
     margin: 0 auto;
+    padding-top: 5px;
   }
 }
 
-/* line 90, ../scss/_header.scss */
+/* line 91, ../scss/_header.scss */
 .nav__item {
   float: left;
   display: inline-block;
   margin: 0 13px;
 }
 
-/* line 95, ../scss/_header.scss */
+/* line 97, ../scss/_header.scss */
 .nav__icon, .nav__item--selected .nav__icon {
   width: 17px;
   display: block;
   margin: 0 auto;
-  opacity: 0;
-  filter: alpha(opacity=0);
+  opacity: 1;
+  filter: alpha(opacity=1);
 }
 @media (max-width: 900px) {
-  /* line 95, ../scss/_header.scss */
+  /* line 97, ../scss/_header.scss */
   .nav__icon, .nav__item--selected .nav__icon {
     display: none;
   }
 }
 
-/* line 104, ../scss/_header.scss */
+/* line 106, ../scss/_header.scss */
 .nav__name, .nav__item--selected .nav__name {
   display: inline-block;
   vertical-align: middle;
-  color: #858585;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 13px;
-  font-weight: bold;
-}
-/* line 107, ../scss/_header.scss */
-.nav__name:hover {
   color: #404040;
+  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+/* line 109, ../scss/_header.scss */
+.nav__name:hover {
+  color: #858585;
 }
 
-/* line 112, ../scss/_header.scss */
+/* line 114, ../scss/_header.scss */
 .nav__item--selected .nav__icon {
   opacity: 1;
   filter: alpha(opacity=1);
 }
-/* line 117, ../scss/_header.scss */
+/* line 119, ../scss/_header.scss */
 .nav__item--selected .nav__name {
   color: #f15a24;
+}
+/* line 122, ../scss/_header.scss */
+.nav__item--selected .nav__name:hover {
+  color: #f79c7c;
 }
 
 /* line 1, ../scss/_index.scss */
@@ -300,7 +309,7 @@ figcaption {
   position: relative;
 }
 
-/* line 39, ../scss/_portfolio.scss */
+/* line 40, ../scss/_portfolio.scss */
 .up {
   position: fixed;
   bottom: 70px;
@@ -315,72 +324,52 @@ figcaption {
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 45, ../scss/_portfolio.scss */
+/* line 46, ../scss/_portfolio.scss */
 .up:hover {
   background-color: gray;
   background-image: url("../icon/up_white.png");
 }
 
-/* line 50, ../scss/_portfolio.scss */
+/* line 51, ../scss/_portfolio.scss */
 .portfolio__item {
+  font-family: "Didot", "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   float: left;
   background-clip: content-box;
-}
-/* line 53, ../scss/_portfolio.scss */
-.portfolio__item:hover {
-  background-color: #f2f2f2;
-}
-/* line 55, ../scss/_portfolio.scss */
-.portfolio__item:hover figcaption {
-  border-bottom: #ccc 1px solid;
-}
-/* line 58, ../scss/_portfolio.scss */
-.portfolio__item:hover .portfolio__item__zoom {
-  display: initial;
-}
-/* line 61, ../scss/_portfolio.scss */
-.portfolio__item:hover .portfolio__item__title, .portfolio__item:hover .portfolio__item__data, .portfolio__item:hover .portfolio__item__price {
   color: #404040;
 }
-
-/* line 66, ../scss/_portfolio.scss */
-.portfolio__item__image {
+/* line 56, ../scss/_portfolio.scss */
+.portfolio__item .portfolio__item__image {
   width: 100%;
   padding: 0;
   margin: 0;
 }
-
-/* line 71, ../scss/_portfolio.scss */
-.portfolio__item__zoom {
+/* line 61, ../scss/_portfolio.scss */
+.portfolio__item .portfolio__item__zoom {
   position: absolute;
   top: -30px;
   right: 10px;
   display: none;
 }
-
-/* line 76, ../scss/_portfolio.scss */
-.portfolio__item__title {
+/* line 66, ../scss/_portfolio.scss */
+.portfolio__item .portfolio__item__title {
   padding: 10px;
-  color: #858585;
   font-size: 17px;
+  font-weight: bold;
   text-transform: uppercase;
 }
-
-/* line 80, ../scss/_portfolio.scss */
-.portfolio__item__data {
+/* line 70, ../scss/_portfolio.scss */
+.portfolio__item .portfolio__item__data {
   padding: 0 10px;
-  color: #858585;
   margin-top: -5px;
   font-size: 17px;
   font-variant: small-caps;
 }
-/* line 83, ../scss/_portfolio.scss */
-.portfolio__item__data span {
+/* line 73, ../scss/_portfolio.scss */
+.portfolio__item .portfolio__item__data span {
   font-size: 13px;
 }
-
-/* line 88, ../scss/_portfolio.scss */
-.portfolio__item__price {
+/* line 77, ../scss/_portfolio.scss */
+.portfolio__item .portfolio__item__price {
   padding: 10px;
   color: #858585;
   font-size: 13px;
@@ -388,82 +377,103 @@ figcaption {
   text-transform: uppercase;
   text-align: right;
 }
+/* line 81, ../scss/_portfolio.scss */
+.portfolio__item:hover {
+  background-color: #f0f0f0;
+}
+/* line 83, ../scss/_portfolio.scss */
+.portfolio__item:hover figcaption {
+  border-bottom: #ccc 1px solid;
+}
+/* line 86, ../scss/_portfolio.scss */
+.portfolio__item:hover .portfolio__item__zoom {
+  display: initial;
+}
+/* line 89, ../scss/_portfolio.scss */
+.portfolio__item:hover .portfolio__item__title, .portfolio__item:hover .portfolio__item__data, .portfolio__item:hover .portfolio__item__price {
+  color: #404040;
+}
 
 @media (min-width: 1680px) {
-  /* line 94, ../scss/_portfolio.scss */
+  /* line 96, ../scss/_portfolio.scss */
   .portfolio__item__title {
     font-size: 23px;
     padding: 10px;
   }
 
-  /* line 98, ../scss/_portfolio.scss */
+  /* line 100, ../scss/_portfolio.scss */
   .portfolio__item__data {
     font-size: 23px;
     padding: 0 10px;
     margin-top: -10px;
   }
 
-  /* line 102, ../scss/_portfolio.scss */
+  /* line 104, ../scss/_portfolio.scss */
   .portfolio__item__price {
     font-size: 17px;
     padding: 10px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 109, ../scss/_portfolio.scss */
-  .portfolio, .interior, .resume, #interior__container {
+  /* line 111, ../scss/_portfolio.scss */
+  .portfolio, .interior, .resume, #interior__container, .about {
     padding: 10px;
+    padding-top: 20px;
   }
 
-  /* line 113, ../scss/_portfolio.scss */
+  /* line 116, ../scss/_portfolio.scss */
   #container .portfolio__item {
     padding: 10px;
     width: calc(100%/4);
   }
 }
 @media (max-width: 1024px) {
-  /* line 120, ../scss/_portfolio.scss */
-  .portfolio, .interior, .resume, #interior__container {
+  /* line 123, ../scss/_portfolio.scss */
+  .portfolio, .interior, .resume, #interior__container, .about {
     padding: 10px;
+    padding-top: 20px;
   }
 
-  /* line 124, ../scss/_portfolio.scss */
+  /* line 128, ../scss/_portfolio.scss */
   #container .portfolio__item {
     padding: 10px;
     width: calc(100%/3);
   }
 }
 @media (max-width: 768px) {
-  /* line 131, ../scss/_portfolio.scss */
-  .portfolio, .interior, .resume, #interior__container {
+  /* line 135, ../scss/_portfolio.scss */
+  .portfolio, .interior, .resume, #interior__container, .about {
     padding: 10px;
+    padding-top: 20px;
   }
 
-  /* line 135, ../scss/_portfolio.scss */
+  /* line 140, ../scss/_portfolio.scss */
   #container .portfolio__item {
     padding: 10px;
     width: calc(100%/2);
   }
 }
 @media (max-width: 640px) {
-  /* line 145, ../scss/_portfolio.scss */
-  .portfolio, .interior, .resume, #interior__container {
+  /* line 150, ../scss/_portfolio.scss */
+  .portfolio, .interior, .resume, #interior__container, .about {
     padding: 10px;
+    padding-top: 20px;
   }
 
-  /* line 149, ../scss/_portfolio.scss */
+  /* line 155, ../scss/_portfolio.scss */
   #container .portfolio__item {
     padding: 10px;
     width: calc(100%/1);
   }
 }
 @media (max-width: 320px) {
-  /* line 157, ../scss/_portfolio.scss */
-  .portfolio, .resume, #interior__container {
+  /* line 163, ../scss/_portfolio.scss */
+  .portfolio, .resume, #interior__container, .about {
     padding: 10px;
+    padding-top: 20px;
   }
 
-  /* line 161, ../scss/_portfolio.scss */
+  /* line 168, ../scss/_portfolio.scss */
   #container .portfolio__item {
     padding: 10px;
     width: calc(100%/1);
@@ -604,136 +614,326 @@ body {
 /* line 12, ../scss/_resume.scss */
 .resume__nav {
   display: inline-block;
-  float: left;
-  border-right: 1px solid #ccc;
+  float: right;
+  border-right: 1px solid #f79c7c;
   margin-top: 10px;
   background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
-  left: 10px;
+  left: 20px;
+  margin-right: 20px;
 }
 /* line 18, ../scss/_resume.scss */
 .resume__nav a {
-  color: #858585;
+  color: #f15a24;
 }
 /* line 20, ../scss/_resume.scss */
 .resume__nav a:hover {
-  color: #404040;
+  color: #f79c7c;
 }
 /* line 24, ../scss/_resume.scss */
 .resume__nav ul {
   float: right;
 }
-
-/* line 28, ../scss/_resume.scss */
-.resume__nav__item {
+/* line 27, ../scss/_resume.scss */
+.resume__nav .resume__nav__item {
+  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 600;
   font-size: 17px;
   text-align: right;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: bold;
   line-height: 1.5;
   padding-right: 10px;
   width: 100%;
 }
-
 /* line 35, ../scss/_resume.scss */
-.resume__nav__item--selected a {
+.resume__nav .resume__nav__item--selected a {
   color: #f15a24;
+  border-bottom: 1px solid #f79c7c;
+  background-color: #fff;
 }
 
-/* line 39, ../scss/_resume.scss */
+/* line 42, ../scss/_resume.scss */
 .resume__container {
   display: inline-block;
   font-size: 13px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  line-height: 1;
+  font-family: "Didot", "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   float: left;
+  margin-left: 238px;
 }
 
-/* line 45, ../scss/_resume.scss */
-.resume__content__title {
+/* line 49, ../scss/_resume.scss */
+.resume__content__title, .wrapper:nth-child(2) h2 {
   display: inline-block;
-  width: 100%;
-  color: #f15a24;
-  font-size: 17px;
-  font-weight: bold;
-  border-bottom: 1px solid #ccc;
-  padding-right: 10px;
+  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #404040;
+  font-size: 23px;
+  font-weight: 600;
 }
 
-/* line 52, ../scss/_resume.scss */
+/* line 54, ../scss/_resume.scss */
 .space {
   margin-bottom: 10px;
 }
 
-/* line 55, ../scss/_resume.scss */
+/* line 57, ../scss/_resume.scss */
 .sub-category {
+  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #404040;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 700;
   margin-top: 10px;
+  margin-bottom: 5px;
 }
 
-/* line 59, ../scss/_resume.scss */
-.year {
-  font-weight: bold;
-}
-
-/* line 62, ../scss/_resume.scss */
-.exhibition__year {
-  float: left;
+/* line 61, ../scss/_resume.scss */
+.resume--item {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.3;
 }
 
 /* line 65, ../scss/_resume.scss */
+.exhibition__year {
+  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  float: left;
+}
+
+/* line 69, ../scss/_resume.scss */
+.year {
+  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 100;
+  padding-right: 5px;
+}
+
+/* line 73, ../scss/_resume.scss */
 .exhibition__data {
   float: left;
   width: auto;
+  font-weight: 300;
 }
 
-/* line 68, ../scss/_resume.scss */
+/* line 76, ../scss/_resume.scss */
 .private__collection {
-  font-style: italic;
+  font-weight: 300;
 }
 
-/* line 71, ../scss/_resume.scss */
-.italic {
+/* line 79, ../scss/_resume.scss */
+.exhibition--type {
+  padding-right: 5px;
+  text-transform: capitalize;
   font-style: italic;
+  font-weight: 100;
 }
 
-/* line 75, ../scss/_resume.scss */
+/* line 83, ../scss/_resume.scss */
+.exhibition--state, .publisher {
+  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  padding-left: 10px;
+  font-weight: 100;
+  color: #858585;
+}
+
+/* line 94, ../scss/_resume.scss */
+.exhibition--rank {
+  font-weight: 400;
+}
+
+/* line 100, ../scss/_resume.scss */
 .resume__content--link {
+  padding-right: 5px;
+  border-bottom: 1px dotted #ccc;
   color: #404040;
-  text-decoration: underline;
 }
-/* line 78, ../scss/_resume.scss */
+/* line 103, ../scss/_resume.scss */
 .resume__content--link:hover {
   color: #f15a24;
 }
 
 @media (max-width: 1024px) {
-  /* line 84, ../scss/_resume.scss */
+  /* line 109, ../scss/_resume.scss */
   .resume__nav__item {
     font-size: 13px;
   }
 }
 @media (max-width: 895px) {
-  /* line 89, ../scss/_resume.scss */
+  /* line 114, ../scss/_resume.scss */
   .resume__nav__item {
     display: none;
   }
 
-  /* line 92, ../scss/_resume.scss */
+  /* line 117, ../scss/_resume.scss */
   .resume__container {
     margin-left: 0;
     padding-left: 0px;
     width: 100%;
   }
 }
-/* line 9, ../scss/style.scss */
+/* line 2, ../scss/_about.scss */
+.border-radius-combo {
+  -moz-border-radius-topleft: 50%;
+  -webkit-border-top-left-radius: 50%;
+  border-top-left-radius: 50%;
+  -moz-border-radius-topright: 50%;
+  -webkit-border-top-right-radius: 50%;
+  border-top-right-radius: 50%;
+  -moz-border-radius-bottomleft: 50%;
+  -webkit-border-bottom-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  -moz-border-radius-bottomright: 50%;
+  -webkit-border-bottom-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+/* line 8, ../scss/_about.scss */
+.about {
+  padding: 20px;
+}
+
+/* line 11, ../scss/_about.scss */
+.wrapper:first-child {
+  width: 22.75%;
+  float: left;
+}
+@media (max-width: 860px) {
+  /* line 11, ../scss/_about.scss */
+  .wrapper:first-child {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* line 19, ../scss/_about.scss */
+#portrait {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #f0f0f0;
+}
+@media (max-width: 860px) {
+  /* line 19, ../scss/_about.scss */
+  #portrait {
+    float: left;
+    width: 35%;
+    margin-right: 20px;
+  }
+}
+
+/* line 35, ../scss/_about.scss */
+#about-self p {
+  padding: 10px;
+  margin-top: 20px;
+  font-family: "Didot", "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 13px;
+  color: #404040;
+  line-height: 1.5;
+  font-style: italic;
+}
+/* line 38, ../scss/_about.scss */
+#about-self p:first-letter {
+  font-size: 41px;
+  line-height: 19.5px;
+  padding-right: 2px;
+}
+
+/* line 45, ../scss/_about.scss */
+.wrapper:nth-child(2) {
+  padding: 20px;
+  padding-top: 10px;
+  float: right;
+  width: 65%;
+}
+@media (max-width: 860px) {
+  /* line 45, ../scss/_about.scss */
+  .wrapper:nth-child(2) {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+/* line 53, ../scss/_about.scss */
+.wrapper:nth-child(2) h2 {
+  border: none;
+  padding: 10px 0;
+  font-weight: bold;
+}
+/* line 58, ../scss/_about.scss */
+.wrapper:nth-child(2) p {
+  font-family: "Didot", "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.3;
+  font-weight: 300;
+  padding-bottom: 17px;
+  width: 80%;
+}
+@media (max-width: 860px) {
+  /* line 58, ../scss/_about.scss */
+  .wrapper:nth-child(2) p {
+    width: 100%;
+  }
+}
+/* line 65, ../scss/_about.scss */
+.wrapper:nth-child(2) figure {
+  width: 35%;
+}
+@media (max-width: 480px) {
+  /* line 65, ../scss/_about.scss */
+  .wrapper:nth-child(2) figure {
+    width: 100%;
+  }
+}
+/* line 71, ../scss/_about.scss */
+.wrapper:nth-child(2) figure img {
+  width: 100%;
+  padding-top: 10px;
+}
+/* line 76, ../scss/_about.scss */
+.wrapper:nth-child(2) section:nth-child(2) figure {
+  float: right;
+  padding-left: 20px;
+}
+@media (max-width: 480px) {
+  /* line 76, ../scss/_about.scss */
+  .wrapper:nth-child(2) section:nth-child(2) figure {
+    padding: 0;
+  }
+}
+/* line 82, ../scss/_about.scss */
+.wrapper:nth-child(2) section:nth-child(2) figure figcaption {
+  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 10px;
+  font-weight: 100;
+  text-align: right;
+  padding: 2.5px;
+}
+/* line 87, ../scss/_about.scss */
+.wrapper:nth-child(2) section:nth-child(3) figure {
+  float: left;
+  padding-right: 20px;
+}
+@media (max-width: 480px) {
+  /* line 87, ../scss/_about.scss */
+  .wrapper:nth-child(2) section:nth-child(3) figure {
+    padding: 0;
+  }
+}
+/* line 93, ../scss/_about.scss */
+.wrapper:nth-child(2) section:nth-child(3) figure figcaption {
+  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 10px;
+  font-weight: 100;
+  text-align: left;
+  padding: 2.5px;
+}
+
+/* line 12, ../scss/style.scss */
 .clear {
   clear: both;
 }
 
-/* line 14, ../scss/style.scss */
+/* line 17, ../scss/style.scss */
 a {
   text-decoration: none;
+}
+
+/* line 20, ../scss/style.scss */
+body {
+  color: #404040;
 }

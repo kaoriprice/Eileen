@@ -10,7 +10,7 @@
 		content:"";
 		background-color:$white;
 		width:20px;
-		height:20px;
+		height:100%;
 		position:absolute;
 		top:0;
 		left:-20px;
@@ -19,7 +19,7 @@
 		content:"";
 		background-color:$white;
 		width:20px;
-		height:20px;
+		height:100%;
 		position:absolute;
 		top:0;
 		right:-20px;
@@ -52,7 +52,7 @@
 }
 .logo__name{
 	font-family: $serif; font-size: $xxl; font-weight: bold;
-	padding: $xs 0 $xs  0;
+	padding: $xs 0 0  0;
 	a{
 		color:$black;
 		&:hover{
@@ -66,7 +66,7 @@
 
 }
 .logo__tag{
-	color:$gray;font-size:$m; font-family: $sans-serif; letter-spacing: 2.3px;
+	color: $gray; font-size:$m; font-family: $sans-serif; letter-spacing: 1px; font-weight: 300; font-style: italic;
 	padding-left:2.3px;
 	@media (max-width: 900px){
 		font-size:$s;
@@ -77,13 +77,14 @@
 	display:inline-block;
 }
 .global__nav{
-	position:absolute; bottom:$xs; right:0;
+	position:absolute; bottom:$xs/2; right:0;
 	float:right;
 	@media (max-width: 640px){
 		text-align:center;
 		position:static;
 		float:none;
 		margin:0 auto;
+		padding-top: $xs/2;
 	}
 }
 
@@ -91,21 +92,22 @@
 	float:left;
 	display:inline-block;
 	margin:0 $s;
+
 }
 .nav__icon{
 	width: $m;
 	display:block; margin:0 auto;
-	opacity:0;
-	filter:alpha(opacity=0);
+	opacity:1;
+	filter:alpha(opacity=1);
 	@media (max-width: 900px){
 		display:none;
 	}
 }
 .nav__name{
 	display:inline-block; vertical-align:middle;
-	color:$gray; font-family:$sans-serif; font-size: $s; font-weight:bold;
+	color:$black; font-family:$sans-serif; font-size: $s; font-weight:600; 
 	&:hover{
-		color:$black;
+		color: $gray;
 	}
 }
 .nav__item--selected{	
@@ -117,6 +119,9 @@
 	.nav__name{
 	@extend .nav__name;
 	color:$red;
+		&:hover{
+			color: $light-red;
+		}
 	}
 }
 
