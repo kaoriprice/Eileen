@@ -38,45 +38,68 @@ figcaption{
 }
 
 .up{
-	position:fixed; bottom:70px; right:10px; z-index:999;
-	padding:4px; border-radius:3px;
-	width:40px; height:40px;
-	background-color:rgba(128, 128, 128, 0.8);
-	background-image:url('../icon/up_white.png'); background-position:center; background-repeat:no-repeat;
+	position:fixed; bottom:70px; right:2px; z-index:999;
+	padding:4px; 
+	width:$xs*4; height:$xs*4;
+	-moz-border-radius: $xs*4;
+	-webkit-border-radius: $xs*4;
+	border-radius: $xs*4;
+	background-color:rgba($white, 0.95);
+	background-image:url('../icon/up_black.svg'); background-position:center; background-repeat:no-repeat;
 	&:hover{
-		background-color:rgba(128, 128, 128, 1);
-		background-image:url('../icon/up_white.png');
+		background-color:rgba(#f0f0f0, 0.95);
+		background-image:url('../icon/up_black.svg');
 	}
 }
 .portfolio__item{
 	font-family: $serif;
-	float:left;
+	float:left; padding: $xs;
 	background-clip:content-box;
-	color: $black;
+	background-color: $white; color: $black;
+	-webkit-transition: background-color 1s ease 0.1s; 
+	transition: background-color  1s ease 0.1s;
 	.portfolio__item__image{
 		width:100%;
 		padding:0;
 		margin:0;
 	}
 	.portfolio__item__zoom{
-		position:absolute; top:-30px; right:$xs;
+		position:absolute; top:-$xs*4; right:0;
 		//left:calc(50% - 15px); //center
-		display:none;
+		opacity:0;
+		filter:alpha(opacity=0);
+		-webkit-transition: opacity 1s ease 0.1s, alpha 1s ease 0.1s;
+		transition: opacity  1s ease 0.1s, alpha 1s ease 0.1s;
 	}
 	.portfolio__item__title{
-		padding:$xs; 
 		font-size:$m; font-weight: bold; text-transform: uppercase; 
+		padding:$xs; padding-bottom: $xs/2; 
+		color: $black;
+		-webkit-transition: color 1s ease 0.1s;
+		transition: color  1s ease 0.1s;
 	}
 	.portfolio__item__data{
-		padding:0 $xs; margin-top:-$xs/2;
+		padding:0 $xs; margin-top:-$xs/2; font-family: $sans-serif; font-weight: 300;
 		font-size:$m; font-variant:small-caps; 
+		color: $black;
+		-webkit-transition: color 1s ease 0.1s;
+		transition: color  1s ease 0.1s;
 		span{
 			font-size:$s;
 		}
 	}
 	.portfolio__item__price{
-		padding:$xs;  color:$gray;
-		font-size: $s;line-height:$m; text-transform: uppercase; text-align: right;
+		padding:$xs; padding-bottom: $xs/2; padding-right: $xs/2;  color:$gray; font-family: $sans-serif; font-weight: 100;
+		font-size: $xs; text-transform: uppercase; text-align: right;
+		color: $black;
+		-webkit-transition: color 1s ease 0.1s;
+		transition: color  1s ease 0.1s;
+	}
+	figcaption{
+		border-bottom: $white 1px solid;
+
+		-webkit-transition: border 1s ease 0.1s;
+		transition: border 1s ease 0.1s;
 	}
 	&:hover{
 		background-color:#f0f0f0;
@@ -84,7 +107,8 @@ figcaption{
 			border-bottom: $light-gray 1px solid;
 		}
 		.portfolio__item__zoom{
-			display:initial;
+			opacity:1;
+			filter:alpha(opacity=1);
 		}
 		.portfolio__item__title, .portfolio__item__data, .portfolio__item__price{
 			color:$black;
@@ -106,67 +130,30 @@ figcaption{
 		padding:$xs;
 	}
 }
-
-@media (min-width: 1024px){
-	.portfolio, .interior, .resume, #interior__container, .about{
-		padding:$xs;
-		padding-top: $xs*2;
-	}
+@media (min-width: 1280px){
 	#container{
 		.portfolio__item{
-			padding:$xs;
 			width:calc(100%/4);
 		}
 	}
 }
-@media (max-width: 1024px){
-	.portfolio, .interior, .resume, #interior__container, .about{
-		padding:$xs;
-		padding-top: $xs*2;
-	}
+@media (min-width: 720px){
 	#container{
 		.portfolio__item{
-			padding:$xs;
 			width:calc(100%/3);
 		}
 	}
 }
-@media (max-width: 768px){
-	.portfolio, .interior, .resume, #interior__container, .about{
-		padding:$xs;
-		padding-top: $xs*2;
-	}
+@media (max-width: 720px){
 	#container{
 		.portfolio__item{
-			padding:$xs;
 			width:calc(100%/2);
-			.portfolio__item__title{
-				//font-size:$s;
-			}
 		}
 	}
 }
 @media (max-width: 640px){
-	.portfolio, .interior, .resume, #interior__container, .about{
-		padding:$xs;
-		padding-top: $xs*2;
-	}
 	#container{
 		.portfolio__item{
-			padding:$xs;
-			width:calc(100%/1);
-		}
-	}
-	
-}
-@media (max-width: 320px){
-	.portfolio, .resume, #interior__container, .about{
-		padding:$xs;
-		padding-top: $xs*2;
-	}
-	#container{
-		.portfolio__item{
-			padding:$xs;
 			width:calc(100%/1);
 		}
 	}

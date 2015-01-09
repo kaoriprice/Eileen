@@ -1,7 +1,7 @@
 [
 	{
-	    "imageUrl": "img/small/afternoon_at_lake_quinault.jpg",
-	    "largeImageUrl": "img/original/afternoon_at_lake_quinault.jpg",
+	    "imageUrl": "img/small/afternoon_at_lake_quinault_small.jpg",
+	    "largeImageUrl": "img/large/afternoon_at_lake_quinault_large.jpg",
 	    "alt": "image of afternoon at lake quinault",
 	    "title": "Afternoon At Lake Quinault",
 	    "medium": "watercolor, ",
@@ -9,8 +9,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/beyond_the_looking_glass.jpg",
-	    "largeImageUrl": "img/original/beyond_the_looking_glass.jpg",
+	    "imageUrl": "img/small/beyond_the_looking_glass_small.jpg",
+	    "largeImageUrl": "img/large/beyond_the_looking_glass_large.jpg",
 	    "alt": "image of beyond_the_looking_glass",
 	    "title": "Beyond the Looking Glass",
 	    "medium": "acrylic, ",
@@ -18,8 +18,8 @@
 	    "price": "$400"
 	},
 	{
-	    "imageUrl": "img/small/breakthrough.jpg",
-	    "largeImageUrl": "img/original/breakthrough.jpg",
+	    "imageUrl": "img/small/breakthrough_small.jpg",
+	    "largeImageUrl": "img/large/breakthrough_large.jpg",
 	    "alt": "image of breakthrough",
 	    "title": "breakthrough",
 	    "medium": "watercolor, ",
@@ -27,8 +27,8 @@
 	    "price": "$1400"
 	},
 	{
-	    "imageUrl": "img/small/cloudwatching.jpg",
-	    "largeImageUrl": "img/original/cloudwatching.jpg",
+	    "imageUrl": "img/small/cloudwatching_small.jpg",
+	    "largeImageUrl": "img/large/cloudwatching_large.jpg",
 	    "alt": "image of cloudwatching",
 	    "title": "cloudwatching",
 	    "medium": "watercolor, ",
@@ -36,8 +36,8 @@
 	    "price": "$425"
 	},
 	{
-	    "imageUrl": "img/small/cryptic.jpg",
-	    "largeImageUrl": "img/original/cryptic.jpg",
+	    "imageUrl": "img/small/cryptic_small.jpg",
+	    "largeImageUrl": "img/large/cryptic_large.jpg",
 	    "alt": "image of cryptic",
 	    "title": "cryptic",
 	    "medium": "watermedia & collage, ",
@@ -45,8 +45,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/dark_energy_of_the_universe.jpg",
-	    "largeImageUrl": "img/original/dark_energy_of_the_universe.jpg",
+	    "imageUrl": "img/small/dark_energy_of_the_universe_small.jpg",
+	    "largeImageUrl": "img/large/dark_energy_of_the_universe_large.jpg",
 	    "alt": "image of dark energy of the universe",
 	    "title": "dark energy of the universe",
 	    "medium": "watercolor, ",
@@ -54,8 +54,8 @@
 	    "price": "$1400"
 	},
 	{
-	    "imageUrl": "img/small/dreamcatcher.jpg",
-	    "largeImageUrl": "img/original/dreamcatcher.jpg",
+	    "imageUrl": "img/small/dreamcatcher_small.jpg",
+	    "largeImageUrl": "img/large/dreamcatcher_large.jpg",
 	    "alt": "image of dreamcatcher",
 	    "title": "dreamcatcher",
 	    "medium": "watercolor, ",
@@ -63,8 +63,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/east_of_the_sun_west_of_the_moon.jpg",
-	    "largeImageUrl": "img/original/east_of_the_sun_west_of_the_moon.jpg",
+	    "imageUrl": "img/small/east_of_the_sun_west_of_the_moon_small.jpg",
+	    "largeImageUrl": "img/large/east_of_the_sun_west_of_the_moon_large.jpg",
 	    "alt": "image of east of the sun west of the moon",
 	    "title": "east of the sun west of the moon",
 	    "medium": "watercolor, ",
@@ -72,8 +72,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/ebb_and_flow.jpg",
-	    "largeImageUrl": "img/original/ebb_and_flow.jpg",
+	    "imageUrl": "img/small/ebb_and_flow_small.jpg",
+	    "largeImageUrl": "img/large/ebb_and_flow_large.jpg",
 	    "alt": "image of ebb and flow",
 	    "title": "ebb and flow",
 	    "medium": "watercolor, ",
@@ -81,8 +81,8 @@
 	    "price": "$1400"
 	},
 	{
-	    "imageUrl": "img/small/echo.jpg",
-	    "largeImageUrl": "img/original/echo.jpg",
+	    "imageUrl": "img/small/echo_small.jpg",
+	    "largeImageUrl": "img/large/echo_large.jpg",
 	    "alt": "image of echo",
 	    "title": "echo",
 	    "medium": "watercolor & collage, ",
@@ -90,8 +90,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/erosion.jpg",
-	    "largeImageUrl": "img/original/erosion.jpg",
+	    "imageUrl": "img/small/erosion_small.jpg",
+	    "largeImageUrl": "img/large/erosion_large.jpg",
 	    "alt": "image of erosion",
 	    "title": "erosion",
 	    "medium": "watercolor, ",
@@ -99,8 +99,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/inner_workings.jpg",
-	    "largeImageUrl": "img/original/inner_workings.jpg",
+	    "imageUrl": "img/small/inner_workings_small.jpg",
+	    "largeImageUrl": "img/large/inner_workings_large.jpg",
 	    "alt": "image of inner workings",
 	    "title": "inner workings",
 	    "medium": "mixed media, ",
@@ -108,8 +108,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/into_the_woods.jpg",
-	    "largeImageUrl": "img/original/into_the_woods.jpg",
+	    "imageUrl": "img/small/into_the_woods_small.jpg",
+	    "largeImageUrl": "img/large/into_the_woods_large.jpg",
 	    "alt": "image of into the woods",
 	    "title": "into the woods",
 	    "medium": "watercolor, ",
@@ -117,8 +117,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/irish_pastoral.jpg",
-	    "largeImageUrl": "img/original/irish_pastoral.jpg",
+	    "imageUrl": "img/small/irish_pastoral_small.jpg",
+	    "largeImageUrl": "img/large/irish_pastoral_large.jpg",
 	    "alt": "image of irish pastoral",
 	    "title": "irish pastoral",
 	    "medium": "watercolor on aquaboard, ",
@@ -126,8 +126,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/lascaux.jpg",
-	    "largeImageUrl": "img/original/lascaux.jpg",
+	    "imageUrl": "img/small/lascaux_small.jpg",
+	    "largeImageUrl": "img/large/lascaux_large.jpg",
 	    "alt": "image of lascaux",
 	    "title": "lascaux",
 	    "medium": "watercolor, ",
@@ -135,8 +135,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/luna_pulls_the_waters.jpg",
-	    "largeImageUrl": "img/original/luna_pulls_the_waters.jpg",
+	    "imageUrl": "img/small/luna_pulls_the_waters_small.jpg",
+	    "largeImageUrl": "img/large/luna_pulls_the_waters_large.jpg",
 	    "alt": "image of luna pulls the waters",
 	    "title": "luna pulls the waters",
 	    "medium": "watermedia & collage, ",
@@ -144,8 +144,8 @@
 	    "price": "$900"
 	},
 	{
-	    "imageUrl": "img/small/moonstruck.jpg",
-	    "largeImageUrl": "img/original/moonstruck.jpg",
+	    "imageUrl": "img/small/moonstruck_small.jpg",
+	    "largeImageUrl": "img/large/moonstruck_large.jpg",
 	    "alt": "image of moonstruck",
 	    "title": "moonstruck",
 	    "medium": "watermedia & collage, ",
@@ -153,8 +153,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/passages.jpg",
-	    "largeImageUrl": "img/original/passages.jpg",
+	    "imageUrl": "img/small/passages_small.jpg",
+	    "largeImageUrl": "img/large/passages_large.jpg",
 	    "alt": "image of passages",
 	    "title": "passages",
 	    "medium": "watercolor, ",
@@ -162,8 +162,8 @@
 	    "price": "NFS"
 	},
 	{
-	    "imageUrl": "img/small/pattern_series_beetle_back.jpg",
-	    "largeImageUrl": "img/original/pattern_series_beetle_back.jpg",
+	    "imageUrl": "img/small/pattern_series_beetle_back_small.jpg",
+	    "largeImageUrl": "img/large/pattern_series_beetle_back_large.jpg",
 	    "alt": "image of pattern series, beetle back",
 	    "title": "pattern series: beetle back",
 	    "medium": "acrylic, ",
@@ -171,8 +171,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/portal_stone.jpg",
-	    "largeImageUrl": "img/original/portal_stone.jpg",
+	    "imageUrl": "img/small/portal_stone_small.jpg",
+	    "largeImageUrl": "img/large/portal_stone_large.jpg",
 	    "alt": "image of portal stone",
 	    "title": "portal stone",
 	    "medium": "watercolor & collage, ",
@@ -180,8 +180,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/resistance.jpg",
-	    "largeImageUrl": "img/original/resistance.jpg",
+	    "imageUrl": "img/small/resistance_small.jpg",
+	    "largeImageUrl": "img/large/resistance_large.jpg",
 	    "alt": "image of resistance",
 	    "title": "resistance",
 	    "medium": "watercolor & gouache, ",
@@ -189,8 +189,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/resonance.jpg",
-	    "largeImageUrl": "img/original/resonance.jpg",
+	    "imageUrl": "img/small/resonance_small.jpg",
+	    "largeImageUrl": "img/large/resonance_large.jpg",
 	    "alt": "image of resonance",
 	    "title": "resonance",
 	    "medium": "watercolor, ",
@@ -198,8 +198,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/rhythm_series_roots.jpg",
-	    "largeImageUrl": "img/original/rhythm_series_roots.jpg",
+	    "imageUrl": "img/small/rhythm_series_roots_small.jpg",
+	    "largeImageUrl": "img/large/rhythm_series_roots_large.jpg",
 	    "alt": "image of rhythm series:roots",
 	    "title": "rhythm series:roots",
 	    "medium": "acrylic, ",
@@ -207,8 +207,8 @@
 	    "price": "$400"
 	},
 	{
-	    "imageUrl": "img/small/rhythm_series_water_and_rocks.jpg",
-	    "largeImageUrl": "img/original/rhythm_series_water_and_rocks.jpg",
+	    "imageUrl": "img/small/rhythm_series_water_and_rocks_small.jpg",
+	    "largeImageUrl": "img/large/rhythm_series_water_and_rocks_large.jpg",
 	    "alt": "image of rhythm series: water and rocks",
 	    "title": "rhythm series: water and rocks",
 	    "medium": "acrylic, ",
@@ -216,8 +216,8 @@
 	    "price": "$400"
 	},
 	{
-	    "imageUrl": "img/small/sunflare.jpg",
-	    "largeImageUrl": "img/original/sunflare.jpg",
+	    "imageUrl": "img/small/sunflare_small.jpg",
+	    "largeImageUrl": "img/large/sunflare_large.jpg",
 	    "alt": "image of sunflare",
 	    "title": "sunflare",
 	    "medium": "watercolor, ",
@@ -225,8 +225,8 @@
 	    "price": "$400"
 	},
 	{
-	    "imageUrl": "img/small/symbiosis.jpg",
-	    "largeImageUrl": "img/original/symbiosis.jpg",
+	    "imageUrl": "img/small/symbiosis_small.jpg",
+	    "largeImageUrl": "img/large/symbiosis_large.jpg",
 	    "alt": "image of symbiosis",
 	    "title": "symbiosis",
 	    "medium": "acrylic, ",
@@ -234,8 +234,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/the_dreaming.jpg",
-	    "largeImageUrl": "img/original/the_dreaming.jpg",
+	    "imageUrl": "img/small/the_dreaming_small.jpg",
+	    "largeImageUrl": "img/large/the_dreaming_large.jpg",
 	    "alt": "image of the dreaming",
 	    "title": "the dreaming",
 	    "medium": "watercolor, ",
@@ -243,8 +243,8 @@
 	    "price": "$425"
 	},
 	{
-	    "imageUrl": "img/small/the_journey.jpg",
-	    "largeImageUrl": "img/original/the_journey.jpg",
+	    "imageUrl": "img/small/the_journey_small.jpg",
+	    "largeImageUrl": "img/large/the_journey_large.jpg",
 	    "alt": "image of the journey",
 	    "title": "the journey",
 	    "medium": "watercolor $ collage, ",
@@ -252,8 +252,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/three_wishes.jpg",
-	    "largeImageUrl": "img/original/three_wishes.jpg",
+	    "imageUrl": "img/small/three_wishes_small.jpg",
+	    "largeImageUrl": "img/large/three_wishes_large.jpg",
 	    "alt": "image of three wishes",
 	    "title": "three wishes",
 	    "medium": "watercolor & collage, ",
@@ -261,8 +261,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/tidal_musings.jpg",
-	    "largeImageUrl": "img/original/tidal_musings.jpg",
+	    "imageUrl": "img/small/tidal_musings_small.jpg",
+	    "largeImageUrl": "img/large/tidal_musings_large.jpg",
 	    "alt": "image of tidal musings",
 	    "title": "tidal musings",
 	    "medium": "watermedia, ",
@@ -270,8 +270,8 @@
 	    "price": "$1400"
 	},
 	{
-	    "imageUrl": "img/small/totem.jpg",
-	    "largeImageUrl": "img/original/totem.jpg",
+	    "imageUrl": "img/small/totem_small.jpg",
+	    "largeImageUrl": "img/large/totem_large.jpg",
 	    "alt": "image of totem",
 	    "title": "totem",
 	    "medium": "watercolor, ",
@@ -279,8 +279,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/trance.jpg",
-	    "largeImageUrl": "img/original/trance.jpg",
+	    "imageUrl": "img/small/trance_small.jpg",
+	    "largeImageUrl": "img/large/trance_large.jpg",
 	    "alt": "image of trance",
 	    "title": "trance",
 	    "medium": "acrylic, ",
@@ -288,8 +288,8 @@
 	    "price": "$700"
 	},
 	{
-	    "imageUrl": "img/small/tree_spirits.jpg",
-	    "largeImageUrl": "img/original/tree_spirits.jpg",
+	    "imageUrl": "img/small/tree_spirits_small.jpg",
+	    "largeImageUrl": "img/large/tree_spirits_large.jpg",
 	    "alt": "image of tree spirits",
 	    "title": "tree spirits",
 	    "medium": "acrylic, ",
@@ -297,8 +297,8 @@
 	    "price": "$400"
 	},
 	{
-	    "imageUrl": "img/small/waking_the_spirits_of_the_forest.jpg",
-	    "largeImageUrl": "img/original/waking_the_spirits_of_the_forest.jpg",
+	    "imageUrl": "img/small/waking_the_spirits_of_the_forest_small.jpg",
+	    "largeImageUrl": "img/large/waking_the_spirits_of_the_forest_large.jpg",
 	    "alt": "image of waking the spirits of the forest",
 	    "title": "waking the spirits of the forest",
 	    "medium": "watercolor, ",
@@ -306,8 +306,8 @@
 	    "price": "$2800"
 	},
 	{
-	    "imageUrl": "img/small/winter_storm.jpg",
-	    "largeImageUrl": "img/original/winter_storm.jpg",
+	    "imageUrl": "img/small/winter_storm_small.jpg",
+	    "largeImageUrl": "img/large/winter_storm_large.jpg",
 	    "alt": "image of winter storm",
 	    "title": "winter storm",
 	    "medium": "acrylic, diptych ",
@@ -315,8 +315,8 @@
 	    "price": "Sold"
 	},
 	{
-	    "imageUrl": "img/small/written_on_stone.jpg",
-	    "largeImageUrl": "img/original/written_on_stone.jpg",
+	    "imageUrl": "img/small/written_on_stone_small.jpg",
+	    "largeImageUrl": "img/large/written_on_stone_large.jpg",
 	    "alt": "image of written on stone",
 	    "title": "written on stone",
 	    "medium": "acrylic, ",

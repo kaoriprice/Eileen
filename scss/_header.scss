@@ -8,37 +8,34 @@
 	margin:0 20px;
 	&::before{
 		content:"";
-		background-color:$white;
-		width:20px;
+		background-color: rgba($white, 0.95);
+		width:$xs*2;
 		height:100%;
 		position:absolute;
 		top:0;
-		left:-20px;
+		left:-$xs*2;
 	}
 	&::after{
 		content:"";
-		background-color:$white;
-		width:20px;
+		background-color: rgba($white, 0.95);
+		width:$xs*2;
 		height:100%;
 		position:absolute;
 		top:0;
-		right:-20px;
+		right:-$xs*2;
 	}
 	@media (max-width: 720px){
 		width:calc(100% - 20px); 
-		margin:0 10px;
+		margin:0 $xs;
 		&::before{
-			width:10px;
-			left:-10px;
+			width:$xs;
+			left:-$xs;
 		}
 		&::after{
-			width:10px;
-			right:-10px;
+			width: $xs;
+			right:-$xs;
 		}
-}
-
-
-
+	}
 }
 .logo{
 	display:inline-block;
@@ -53,6 +50,7 @@
 .logo__name{
 	font-family: $serif; font-size: $xxl; font-weight: bold;
 	padding: $xs 0 0  0;
+
 	a{
 		color:$black;
 		&:hover{
@@ -97,6 +95,8 @@
 		display:block; margin:0 auto;
 		opacity:1;
 		filter:alpha(opacity=1);
+		// -webkit-transition: opacity 0.5s ease, alpha 0.5s ease;
+		// transition: opacity  0.5s ease, alpha 0.5s ease;
 		@media (max-width: 640px){
 			display:none;
 		}
@@ -104,6 +104,8 @@
 	.nav__name{
 		display:inline-block; vertical-align:middle;
 		color:$black; font-family:$sans-serif; font-size: $s; font-weight:600; 
+		// -webkit-transition: color 0.5s ease;
+		// transition: color  0.5s ease;
 	}
 	&:hover{
 		.nav__icon{

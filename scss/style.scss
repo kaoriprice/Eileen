@@ -20,3 +20,19 @@ a{
 body{
 	color: $black;
 }
+
+.enter, .portfolio, .interior, .resume, #interior__container, .about{
+	padding:$xs*2; padding-top: $xs;
+}	
+@media (max-width: 720px){
+	.enter, .portfolio, .interior, .resume, #interior__container, .about{
+		padding:$xs;
+	}
+}
+footer{
+	width: 100%;text-align: center;
+	.copyright{
+		font-size: $xs; font-family: $sans-serif; font-weight: 300; 
+		padding: $xs;
+	}
+}
